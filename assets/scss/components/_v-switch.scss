@@ -1,0 +1,42 @@
+@use '../base/variables' as *;
+
+.v-input.v-input--switch {
+
+    &.switch-sm label {
+        font-size: 0.9rem;
+    }
+
+    &.v-input--switch--inset .v-input--selection-controls__input,
+    &.v-input--switch--inset .v-input--switch__track {
+        width: 55px;
+        height: 25px;
+    }
+
+    .v-input--switch__thumb {
+        top: calc(50% - 10px);
+        height: 17px;
+        width: 17px;
+    }
+
+    .v-input__slot {
+        margin-bottom: 0;
+    }
+}
+
+.v-application {
+    &.v-application--is-rtl .v-input--switch--inset.v-input--is-dirty {
+
+        .v-input--selection-controls__ripple,
+        .v-input--switch__thumb {
+            transform: translate(-35px, 0) !important;
+        }
+    }
+
+    &.v-application--is-ltr .v-input--switch--inset.v-input--is-dirty {
+
+        .v-input--selection-controls__ripple,
+        .v-input--switch__thumb {
+            transform: translate(0, 35px) !important;
+        }
+    }
+}

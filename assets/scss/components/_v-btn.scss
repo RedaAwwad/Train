@@ -1,0 +1,49 @@
+@use '../base/variables' as *;
+
+.v-application {
+  .v-btn {
+    letter-spacing: 0;
+
+    &:not(.v-btn--round).v-size--default {
+      height: auto !important;
+      min-height: 36px !important;
+      &.auto-h {
+        min-height: 40px !important;
+      }
+    }
+  }
+
+  .v-btn.btn-primary {
+    height: auto !important;
+    min-width: 130px !important;
+    font-family: $tajawal_bold;
+  }
+
+  .v-btn.btn-primary.v-size--default {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .v-dialog .v-card__actions > .v-btn.v-btn {
+    padding: 12px 16px;
+  }
+
+  .v-date-picker-table .v-btn:not(.v-btn--round) {
+    height: 32px !important;
+    min-width: 0 !important;
+    font-family: $tajawal;
+    letter-spacing: initial;
+  }
+
+  .v-dialog .v-card__actions > .v-btn.v-btn {
+    padding: 12px 16px;
+  }
+
+  .v-btn.cusotm-width:not(.v-btn--round) {
+    font-family: inherit !important;
+    min-width: auto !important;
+  }
+}
+.tx-blue {
+  color: blue !important;
+}

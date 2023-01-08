@@ -1,0 +1,52 @@
+@use '../base/variables' as *;
+
+.v-application .date-picker-input {
+  min-width: 218px;
+
+  &.v-input .v-text-field__slot,
+  &.v-input .v-input__slot {
+    min-height: 38px !important;
+  }
+
+  &.v-input .v-input__prepend-outer {
+    margin-top: 0 !important;
+    transform: translatey(35%);
+  }
+
+  input {
+    padding-right: 0 !important;
+    padding-left: 35px !important;
+  }
+
+  &.v-text-field--enclosed .v-input__append-inner {
+    margin-top: 10px;
+  }
+
+  .v-input__prepend-outer {
+    margin-top: 13px !important;
+  }
+}
+
+.v-application--is-rtl .date-picker-input {
+
+  input {
+    padding-left: 0 !important;
+    padding-right: 35px !important;
+  }
+
+  .v-input__prepend-outer {
+    margin-left: -35px;
+  }
+}
+
+.v-application--is-ltr .date-picker-input {
+
+  input {
+    padding-left: 35px !important;
+    padding-right: 0 !important;
+  }
+
+  .v-input__prepend-outer {
+    margin-right: -35px;
+  }
+}

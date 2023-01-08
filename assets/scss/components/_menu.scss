@@ -1,0 +1,28 @@
+@use '../base/variables' as *;
+
+.v-application {
+
+    .menu-control[aria-expanded="true"] {
+        background-color: $light !important;
+    }
+
+    .theme--light.v-btn:focus::before {
+        background-color: $lighter !important;
+    }
+
+
+
+    .menu-control {
+        .v-icon {
+            transition: transform .3s ease-in-out;
+        }
+
+        &[aria-expanded="true"] .v-icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    .v-menu__content {
+        box-shadow: $shadow-lg;
+    }
+}

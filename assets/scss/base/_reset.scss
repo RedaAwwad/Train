@@ -1,0 +1,97 @@
+@use '../base/variables' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $tajawal, sans-serif !important;
+    // main srcollbar
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        // box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+        background-color: $primary;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+    }
+
+    [dir='ltr'] .v-application--is-rtl {
+        direction: ltr !important;
+    }
+
+    .v-application {
+        [class*='text-'] {
+            font-family: $tajawal, sans-serif !important;
+        }
+
+        font-family: $tajawal,
+        sans-serif !important;
+
+        &.theme--light {
+
+            .v-dialog--scrollable>.v-card>.v-card__text,
+            .v-data-table--fixed-header>.v-data-table__wrapper {
+                &::-webkit-scrollbar-track {
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+
+    .v-pagination {
+        justify-content: flex-end;
+    }
+
+    .v-pagination__item {
+        font-size: 0.8rem;
+        border-radius: 50%;
+        height: 25px;
+        margin: 0.2rem;
+        min-width: 25px;
+
+        &--active {
+            cursor: default;
+        }
+    }
+
+    .v-pagination__navigation {
+        box-shadow: none;
+        border-radius: 0;
+        height: 25px;
+        width: 25px;
+        margin: 0.3rem 5px;
+    }
+
+    .v-menu__content {
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f3f3f3;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $accent;
+        }
+    }
+
+    .v-application.v-application--is-rtl * {
+        letter-spacing: 0;
+    }
+
+    .highcharts-credits {
+        display: none !important;
+    }
+}

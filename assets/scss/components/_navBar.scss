@@ -1,0 +1,20 @@
+@use '../base/variables' as *;
+
+.top-navbar.v-app-bar {
+
+  .v-toolbar__content {
+    border-bottom: 1px solid $border-color;
+
+    @media screen and (max-width: 991px) {
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+
+    .v-toolbar__content,
+    .v-toolbar__extension {
+      padding: 4px 8px !important;
+    }
+  }
+}

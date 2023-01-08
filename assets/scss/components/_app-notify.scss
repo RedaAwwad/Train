@@ -1,0 +1,58 @@
+@use '../base/variables' as *;
+
+.app-notify {
+    max-width: calc(100% - 1rem);
+    margin: 20px 0.5rem 0.5rem 0;
+
+    .vue-notification-wrapper {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: $shadow;
+
+        &.error {
+            background-color: $error;
+            color: $white;
+        }
+
+        &.success {
+            background-color: $primary;
+            color: $white;
+        }
+
+        &.warn {
+            background-color: $warning;
+            color: $white;
+        }
+
+        .icon {
+            width: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: calc(100% - 70px);
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+    .notification-title {
+        padding: 1rem;
+    }
+
+    .notification-content {
+        padding: 1rem;
+    }
+
+}

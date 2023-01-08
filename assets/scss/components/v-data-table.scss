@@ -1,0 +1,111 @@
+@use '../base/variables' as *;
+
+.v-application {
+  .v-data-table {
+
+    &__wrapper {
+      padding-bottom: 15px;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 0, 0, 0);
+        border-radius: 5px;
+      }
+    }
+
+    &>.v-data-table__wrapper>table>thead>tr:last-child>th {
+      border-bottom: none !important;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    &>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>td:not(.v-data-table__mobile-row),
+    &>.v-data-table__wrapper>table>tbody>tr:not(:last-child)>th:not(.v-data-table__mobile-row) {
+      border-bottom: none !important;
+    }
+
+    thead tr th,
+    tbody tr td {
+      white-space: nowrap;
+    }
+
+    &.table-has-status thead tr th:first-of-type {
+      padding-right: 30px;
+    }
+
+    &.packages-table {
+      thead th {
+        min-width: 200px;
+        box-decoration-break: none;
+      }
+    }
+
+    tbody {
+      tr {
+        &.status td:first-of-type {
+          position: relative;
+          padding-right: 30px;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            width: 2px;
+            height: calc(100% - 10px);
+          }
+
+        }
+
+        &.yellow-status td:first-of-type::before {
+          background-color: $info;
+        }
+
+        &.red-status td:first-of-type::before {
+          background-color: $error;
+        }
+
+        &.green-status td:first-of-type::before {
+          background-color: $success;
+        }
+      }
+    }
+  }
+
+  &.theme--light .v-data-table {
+    &:not(.v-data-table--fixed-header) {
+      &>.v-data-table__wrapper>table>thead>tr:last-child>th {
+        background-color: $white-300;
+        color: #000;
+      }
+    }
+
+    &.striped {
+      tbody tr:nth-of-type(odd) {
+        background-color: #DDDDDD;
+      }
+    }
+
+    // &.v-data-table--fixed-header>.v-data-table__wrapper>table>thead tr th {
+    //   background-color: $white !important;
+    // }
+    &.v-data-table--fixed-header .v-data-table-header,
+    &.v-data-table--fixed-header>.v-data-table__wrapper>table>thead>tr:last-child>th {
+      background-color: $white !important;
+      color: #000;
+    }
+  }
+
+  &.theme--dark .v-data-table:not(.v-data-table--fixed-header) {
+    &>.v-data-table__wrapper>table>thead>tr:last-child>th {
+      background-color: rgba(255, 255, 255, 0.24);
+    }
+  }
+}

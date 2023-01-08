@@ -1,0 +1,56 @@
+{
+  "appName": "القطار",
+  "home": "الصفحة الرئيسية",
+  "products": "المنتجات",
+  "store": "المتجر",
+  "more": "المزيد",
+  "filter": "تصفية",
+  "emailAddress": "البريد الإلكتروني ",
+  "password": "كلمة المرور",
+  "login": "تسجيل الدخول",
+  "firstName": "الاسم الاول",
+  "lastName": "اسم العائله",
+  "monthsText": {
+    "jan": "يناير",
+    "feb": "فبراير",
+    "mar": "مارس",
+    "apr": "ابريل",
+    "may": "مايو",
+    "jun": "يونيه",
+    "jul": "يوليو",
+    "aug": "اغسطس",
+    "sep": "سبتمبر",
+    "oct": "اكتوبر",
+    "nov": "نوفمبر",
+    "dec": "ديسمبر"
+  },
+  "export": "تصدير",
+  "$vuetify": {
+    "badge": "",
+    "noDataText": "لا توجد بيانات",
+    "dataTable": {
+      "sortBy": "ترتيب بواسطة",
+      "ariaLabel": {
+        "sortNone": "عدم الترتيب",
+        "activateAscending": ""
+      }
+    },
+    "datePicker": {
+      "nextMonthAriaLabel": "",
+      "prevMonthAriaLabel": "",
+      "itemsSelected": "تم الاختيار"
+    },
+    "timePicker": {
+      "am": "صباحا",
+      "pm": "مساءا"
+    },
+    "pagination": {
+      "ariaLabel": {
+        "previous": "",
+        "next": "",
+        "wrapper": "",
+        "currentPage": ""
+      }
+    }
+  }
+}

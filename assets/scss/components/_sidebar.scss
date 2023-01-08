@@ -1,0 +1,67 @@
+@use '../base/variables' as *;
+
+.main-sidebar .v-navigation-drawer__content {
+  overflow-y: hidden;
+
+  .main-sidebar__links {
+    height: calc(100vh - 84px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      // background-color: $primary;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      // background-color: rgba(255, 255, 255, 0.3);
+      background: transparent;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
+
+.v-application.theme--light {
+  .main-sidebar {
+
+    a,
+    .v-list-item__title,
+    .theme--light.v-icon {
+      color: $white !important;
+    }
+
+    .expanded-active-list .v-list-group__header {
+      background-color: $accent;
+      color: $white !important;
+    }
+
+    .v-list-item {
+      &.v-list-item--active {
+        background-color: $accent;
+        color: $white !important;
+
+        &.v-list-item--link {
+          cursor: default;
+        }
+
+        &.v-list-item--link:before {
+          background-color: transparent;
+        }
+      }
+
+      &.v-list-group__header.v-list-item--active+.v-list-group__items {
+        background-color: $secondary;
+        color: $white !important;
+      }
+    }
+  }
+}

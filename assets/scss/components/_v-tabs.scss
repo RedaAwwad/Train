@@ -1,0 +1,53 @@
+@use '../base/variables' as *;
+
+.v-application .v-tabs {
+
+  &>.v-tabs-bar {
+    height: 38px;
+    background-color: transparent !important;
+  }
+
+  .v-slide-group__content {
+    gap: 0.6rem;
+  }
+
+  .v-tabs-slider-wrapper {
+    display: none;
+  }
+
+  .v-tab {
+    border: 0.2px solid $gray;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    letter-spacing: 0;
+
+    &.v-tab--active {
+      font-weight: bold;
+
+    }
+  }
+
+  .v-tab--active:hover::before,
+  .v-tab--active::before {
+    opacity: 1;
+    background-color: transparent;
+  }
+}
+
+.theme--light {
+  .v-tabs {
+
+    .v-tab {
+      background-color: $white;
+      color: $primary;
+
+      &.v-tab--active {
+        background-color: rgba(4, 47, 77, 0.3);
+        border-color: transparent;
+      }
+    }
+
+
+
+  }
+}

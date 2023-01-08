@@ -1,0 +1,61 @@
+@use '../base/variables' as *;
+
+.invoice-sidebar {
+  padding-top: 74px;
+
+  &__padding {
+    &-right {
+      padding-right: 300px;
+    }
+
+    &-left {
+      padding-left: 300px;
+    }
+  }
+
+  &__form {
+    height: calc(100vh - 74px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      // box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+      background-color: $primary;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+    }
+  }
+
+  &__calculations {
+    border-bottom: 1.2px dashed #919191;
+  }
+
+  .products-seleted {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      // box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+      border-radius: 5px;
+    }
+  }
+}
+
+.search-form.category-search .v-input__control {
+  min-width: 100px;
+  width: 350px;
+  max-width: 100%;
+}

@@ -1,0 +1,39 @@
+@use '../base/variables' as *;
+
+.search-form {
+
+  .v-text-field .v-input__append-inner,
+  .v-text-field .v-input__prepend-inner {
+    margin-top: 10px;
+  }
+
+  .v-input__control {
+    height: 45px;
+    min-width: 350px;
+    max-width: 100%;
+    padding: 0 .75rem;
+    border-radius: 5px !important;
+    background-color: $white;
+  }
+
+  .v-input__slot {
+    margin-bottom: 0;
+    height: 100%;
+    background-color: transparent !important;
+  }
+
+  &.with-border {
+    border-radius: 5px;
+    border: 1px solid $border-color;
+
+    .v-input__control {
+      padding: 0;
+    }
+  }
+}
+
+.v-application.theme--dark {
+  .search-form .v-input__control {
+    background-color: $primary-dark;
+  }
+}

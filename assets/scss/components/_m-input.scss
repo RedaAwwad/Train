@@ -1,0 +1,169 @@
+@use '../base/variables' as *;
+
+.m-input-border {
+  border: 1px solid $border-color;
+  border-radius: 3px;
+
+  &.error--text {
+    border: 1px solid $error;
+  }
+}
+
+.comman-input {
+
+  .v-messages__message,
+  .v-progress-linear__buffer,
+  .v-progress-linear__indeterminate {
+    margin-top: 8px;
+    display: none !important;
+  }
+
+  .v-application--is-rtl .v-text-field .v-input__append-inner {
+    padding: 3px 10px;
+  }
+}
+
+.comman-input,
+.v-autocomplete {
+
+  // .v-input__icon.v-input__icon--append,
+  .v-input__append-inner {
+    .v-input__icon.v-input__icon--append {
+      height: 36px;
+      margin: 0 10px;
+    }
+
+    .v-input__icon--clear {
+      height: 36px;
+    }
+  }
+
+  // .v-input__icon.v-input__icon--append
+}
+
+.theme--light.v-text-field>.v-input__control>.v-input__slot:before,
+.v-text-field__details {
+  display: none !important;
+}
+
+.v-text-field.v-text-field--enclosed:not(.v-text-field--rounded)>.v-input__control>.v-input__slot,
+.v-text-field.v-text-field--enclosed .v-text-field__details {
+  margin-bottom: 0 !important;
+}
+
+.v-text-field .v-input__prepend-inner,
+.v-text-field .v-input__append-inner {
+  margin-top: 0;
+}
+
+.v-text-field:not(.date-picker-input) input {
+  padding: 0 10px !important;
+  max-height: $input-height !important;
+  height: $input-height !important;
+}
+
+.v-application {
+  .v-text-field {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+
+    .v-input__slot {
+      margin-bottom: 0;
+    }
+
+    // .v-input__control,
+    .v-input__slot,
+    .v-text-field__slot {
+      min-height: $input-height;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  .v-select.v-select--chips.v-input--dense .v-select__selections {
+    min-height: $input-height;
+  }
+
+  .v-otp-input {
+
+    .v-input__slot,
+    .v-text-field__slot {
+      height: auto;
+    }
+
+    input {
+      font-size: 1.5rem;
+      font-family: $tajawal_bold;
+    }
+  }
+
+  .v-input .v-messages {
+    display: none;
+  }
+}
+
+.v-text-field.v-text-field--solo .v-input__control,
+.v-text-field.v-input--dense .v-input__control {
+  min-height: auto !important;
+}
+
+.single-select {
+  &.border-0.pa-0 {
+    .theme--light.v-text-field--solo>.v-input__control>.v-input__slot {
+      background-color: transparent;
+    }
+
+    .lable-info {
+      display: none;
+    }
+
+    .v-input {
+      border: 0;
+    }
+
+    .v-select.v-input--dense .v-select__selection--comma {
+      margin: 16px 4px 3px 0;
+    }
+
+    .v-text-field.v-text-field--solo .v-label {
+      top: calc(50% - 2px);
+    }
+
+    .v-input__icon {
+      margin-top: 15px;
+    }
+
+    .v-application .white--text {
+      color: #CCC !important;
+    }
+  }
+}
+
+.v-text-field.select-input {
+  .v-input__append-inner {
+    transform: translateY(50%);
+  }
+
+  .v-input__control {
+    background-color: $white;
+  }
+}
+
+.v-input .v-input__prepend-outer {
+  transform: translatey(50%);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.v-application .v-input.theme--light.v-input--is-readonly:not(.date-picker-input) .v-input__slot {
+  background-color: #F3F3F3 !important;
+}

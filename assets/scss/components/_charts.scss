@@ -1,0 +1,15 @@
+@use '../base/variables' as *;
+
+.highcharts-container {}
+
+.v-application.theme--dark {
+  .highcharts-container {
+    [fill="#ffffff"] {
+      fill: $primary-secondary;
+    }
+  }
+}
+
+.area-chart .highcharts-area {
+  // fill: red;
+}

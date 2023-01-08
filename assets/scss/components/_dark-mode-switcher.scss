@@ -1,0 +1,17 @@
+@use '../base/variables' as *;
+
+.dark-mode-switcher {
+  .v-input__slot {
+    margin: 0;
+  }
+
+  .v-input--selection-controls {
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+  }
+
+  .v-messages {
+    display: none;
+  }
+}
