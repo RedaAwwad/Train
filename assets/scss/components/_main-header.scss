@@ -1,0 +1,18 @@
+@use '../base/variables' as *;
+
+.main-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(232.45deg, rgba(0, 117, 141, 0.6) 23.35%, rgba(12, 57, 66, 0.6) 78.51%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+        text-align: center;
+    }
+}

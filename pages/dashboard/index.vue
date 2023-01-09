@@ -88,10 +88,9 @@
 </template>
 
 <script>
-import BarRaceChart from '~/components/charts/BarRaceChart.vue';
 export default {
-  components: { BarRaceChart },
   name: 'GeneralFilterPage',
+  layout: 'dashboard',
   data() {
     return {
       chartsFilter: 'day',

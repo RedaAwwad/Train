@@ -1,21 +1,20 @@
 <template>
-  <!-- :color="`${$isDark() ? '' : 'primary'}`" -->
   <v-app-bar
     fixed
     app
     :height="74"
     :color="`${$isDark() ? '' : 'white'}`"
-    class="top-navbar"
+    class="top-navbar border-bottom"
     elevation="0"
   >
     <!-- <v-btn icon @click.stop="toggleSidebar">
       <v-icon>mdi-menu</v-icon>
     </v-btn> -->
-    <a href="#">
-      <v-img :max-width="`${screenWidth < 580 ? '180px' : ''}`" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" alt="القطار"></v-img>
-    </a>
+    <nuxt-link to="/">
+      <v-img :max-width="`${screenWidth < 580 ? '180px' : '220px'}`" :src="`/imgs/logo${$isDark() ? '-light' : ''}.svg`" alt="القطار"></v-img>
+    </nuxt-link>
     <div class="d-none d-sm-block ms-4">
-      <v-img src="/imgs/alyamama.svg" class="reverse-color" alt="alyamama"></v-img>
+        <v-img max-width="110" :src="`/imgs/alyamama${$isDark() ? '-light' : ''}.svg`" class="reverse-color" alt="alyamama"></v-img>
     </div>
 
     <v-divider vertical class="d-none d-lg-inline-block mx-4"></v-divider>
