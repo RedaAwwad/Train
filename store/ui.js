@@ -5,7 +5,7 @@
  */
 
 export const state = () => ({
-  isSidebar: true,
+  isSidebar: false,
 });
 
 export const getters = {
@@ -14,7 +14,7 @@ export const getters = {
   },
 };
 
-      // this.$store.commit('ui/TOGGLE_SIDEBAR', false);
+// this.$store.commit('ui/TOGGLE_SIDEBAR', false);
 
 
 export const mutations = {

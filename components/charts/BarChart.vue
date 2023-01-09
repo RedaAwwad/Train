@@ -1,5 +1,5 @@
 <template>
-    <div class="pa-1">
+    <div class="pa-sm-1">
       <client-only>
         <highchart
           :options="chartOptions" 

@@ -4,8 +4,8 @@
     <!-- <v-switch v-else v-model="darkMode"
       @change="toggleDarkMode"
     ></v-switch> -->
-    <v-btn @click="toggleDarkMode" icon color="dark-gray">
-      <v-icon size="20px">mdi-brightness-{{$isDark() ? '3':'2'}}</v-icon>
+    <v-btn @click="toggleDarkMode" icon color="dark-gray" class="btn-dark-switcher">
+      <v-icon size="20px" :color="`${$isDark() ? 'white' : 'dark-gray'}`">mdi-brightness-{{$isDark() ? '3':'2'}}</v-icon>
     </v-btn>
     <!-- <v-btn icon class="mx-3 font-weight-regular text-button">
       <v-icon size="20px" color="dark-gray" class="mx-1">mdi-open-in-new</v-icon>

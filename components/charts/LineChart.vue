@@ -1,6 +1,6 @@
 <template>
   <v-card elevation="0">
-    <h3 v-if="title" class="px-2 pt-4 text-h6 font-weight-bold text-center">
+    <h3 v-if="title" class="px-2 pt-4 font-weight-bold text-center">
       {{ title }}
     </h3>
     <div class="pr-3 overflow-hidden">

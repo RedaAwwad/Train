@@ -2,7 +2,6 @@
   <v-app>
     <app-notify />
     <!-- <app-sidebar :links="sidebarLinks" /> -->
-
     <app-top-navbar />
     <v-main :dark="$isDark()" :class="{ light: !$isDark() }">
       <v-scroll-x-transition>
@@ -12,7 +11,9 @@
       </v-scroll-x-transition>
     </v-main>
 
-    <!-- <app-sm-footer class="d-md-none"/> -->
+    <div class="d-lg-none">
+      <app-sm-menu />
+    </div>
   </v-app>
 </template>
 

@@ -9,15 +9,15 @@
       {{ title }}
     </h3>
     <v-divider></v-divider>
-    <div class="d-flex align-center justify-space-between gap py-2">
-      <div class="ps-6">
+    <div class="d-flex flex-column flex-md-row align-center justify-space-between gap py-2">
+      <div class="ps-md-6">
         <div v-for="(pie, i) in pieData" :key="i" class="d-flex align-center gap-lg">
           <v-badge :color="`${ i === 1 ? 'secondary' : 'primary'}`" dot class="mb-0"></v-badge>
-          <strong class="mb-1">{{ getPercentage(pie[1]) }}</strong>
-          <span class="mb-2">{{ pie[0] }}</span>
+          <strong class="mb-md-1">{{ getPercentage(pie[1]) }}</strong>
+          <span class="mb-md-2">{{ pie[0] }}</span>
         </div>
       </div>
-      <div class="pe-2">
+      <div class="pe-md-2">
         <pie-chart :data="pieData" /> 
       </div>
     </div>

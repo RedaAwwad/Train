@@ -19,8 +19,8 @@ export default function ({ app }) {
         },
         dark: {
           primary: '#00778B',
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          accent: '#01416F',
+          secondary: '#22DEDE',
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

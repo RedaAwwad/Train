@@ -12,15 +12,16 @@
       <v-icon>mdi-menu</v-icon>
     </v-btn> -->
     <a href="#">
-      <v-img :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" alt="القطار"></v-img>
+      <v-img :max-width="`${screenWidth < 580 ? '180px' : ''}`" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" alt="القطار"></v-img>
     </a>
-    <div class="ms-4">
+    <div class="d-none d-sm-block ms-4">
       <v-img src="/imgs/alyamama.svg" class="reverse-color" alt="alyamama"></v-img>
     </div>
-    <v-divider vertical class="mx-4"></v-divider>
+
+    <v-divider vertical class="d-none d-lg-inline-block mx-4"></v-divider>
     <!-- <app-search-form class="mx-1 d-none d-sm-block" /> -->
 
-    <div class="d-flex align-center px-4">
+    <div class="d-none d-lg-flex align-center px-4">
       <v-menu
         elevation="0"
         transition="slide-y-transition"
@@ -32,7 +33,9 @@
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" text class="menu-control px-2 font-weight-regular text-button">
-            <span class="mx-1 dark-gray--text">الاحصائيات العامة</span>
+            <span class="mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
+              الاحصائيات العامة
+            </span>
             <v-icon size="20px" color="dark-gray" class="mx-1">mdi-chevron-down</v-icon>
           </v-btn>
         </template>
@@ -62,7 +65,9 @@
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" text class="menu-control px-2 font-weight-regular text-button">
-            <span class="mx-1 dark-gray--text">جميع الجنسيات</span>
+            <span class="mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
+              جميع الجنسيات
+            </span>
             <v-icon size="20px" color="dark-gray" class="mx-1">mdi-chevron-down</v-icon>
           </v-btn>
         </template>
@@ -92,7 +97,9 @@
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" text class="menu-control px-2 font-weight-regular text-button">
-            <span class="mx-1 dark-gray--text">جميع الاوقات</span>
+            <span class="mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
+              جميع الاوقات
+            </span>
             <v-icon size="20px" color="dark-gray" class="mx-1">mdi-chevron-down</v-icon>
           </v-btn>
         </template>
@@ -115,18 +122,22 @@
     </div>
 
     <v-spacer></v-spacer>
-    <div class="d-none d-md-flex">
-      <!-- <app-lang-switcher /> -->
+    <v-divider vertical class="d-inline-block d-lg-none me-4"></v-divider>
 
+    <div class="d-none d-sm-block">
       <app-dark-switcher />
     </div>
 
     <!-- <app-notifications link-only /> -->
-    <v-divider vertical class="ms-4"></v-divider>
+    <v-divider vertical class="d-none d-lg-block ms-4"></v-divider>
     <div class="user__avatar d-flex align-center">
-      <v-btn link text to="#" class="mx-3 font-weight-regular text-button">
-        <v-icon size="20px" color="dark-gray" class="mx-1">mdi-open-in-new</v-icon>
-        <span class="mx-1 dark-gray--text">الذهاب إلى لوحة التحكم</span>
+      <v-btn :icon="screenWidth < 960" :x-small="screenWidth < 960" link text to="#" class="mx-lg-3 font-weight-regular text-button">
+        <v-icon :size="`${screenWidth < 960 ? '16px' : '20px'}`" :color="`${$isDark() ? 'white' : 'dark-gray'}`" class="mx-1">
+          mdi-open-in-new
+        </v-icon>
+        <span class="d-none d-lg-inline-block mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
+          الذهاب إلى لوحة التحكم
+        </span>
       </v-btn>
       <v-menu
         transition="slide-y-transition"
@@ -137,7 +148,7 @@
         offset-y
       >
         <template v-slot:activator="{ on, attrs }">
-          <v-avatar v-bind="attrs" v-on="on" class="cursor-pointer">
+          <v-avatar v-bind="attrs" v-on="on" class="d-none d-lg-block cursor-pointer">
             <img
               src="/imgs/user-logo.svg"
               alt="user"
@@ -160,6 +171,12 @@
           </v-list-item>
         </v-list>
       </v-menu>
+      <v-btn @click="toggleSidebar" icon :x-small="screenWidth < 960"
+      class="d-inline-block d-lg-none mx-3 font-weight-regular text-button">
+        <v-icon :size="`${screenWidth < 960 ? '16px' : '20px'}`" :color="`${$isDark() ? 'white' : 'dark-gray'}`" class="mx-1">
+          mdi-dots-vertical
+        </v-icon>
+      </v-btn>
     </div>
   </v-app-bar>
 </template>
@@ -194,6 +211,11 @@ export default {
         },
       ];
     },
+    screenWidth() {
+      if(!process.client) return 280;
+
+      return window.innerWidth;
+    }
   },
   methods: {
     toggleSidebar() {

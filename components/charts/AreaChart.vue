@@ -1,7 +1,7 @@
 <template>
   <v-card elevation="0" class="area-chart">
-    <h3 class="px-4 pt-4 text-h6 font-weight-bold text-center">{{ title }}</h3>
-    <div class="pa-1">
+    <h3 class="px-4 pt-4 font-weight-bold text-center">{{ title }}</h3>
+    <div class="pa-sm-1">
       <client-only>
         <highchart :options="chartOptions" :update="['options.title', 'options.series']" />
       </client-only>
