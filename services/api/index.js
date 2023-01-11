@@ -1,7 +1,7 @@
 /**
  * API config
  */
-import Auth from './Auth';
+import Auth from './auth';
 
 export default ({ $axiosWithAuth, $axiosNoAuth }, inject) => {
     const API = {
