@@ -43,6 +43,8 @@ export default {
     { src: '~/plugins/vue-notification', mode: 'client' },
     { src: '~/plugins/is-dark-theme' },
     { src: '~/plugins/vue2-editor', ssr: false },
+    { src: '~/plugins/vue-video-background.js', mode: 'client' },
+    { src: '~/plugins/reveal-animation.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

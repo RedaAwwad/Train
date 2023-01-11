@@ -7,7 +7,8 @@ export default function ({ app }) {
       themes: {
         light: {
           primary: '#00778B',
-          accent: '#01416F',
+          'primary-2': '#1A8597',
+          accent: '#062F37',
           secondary: '#22DEDE',
           info: '#F89747',
           warning: '#D51C53',

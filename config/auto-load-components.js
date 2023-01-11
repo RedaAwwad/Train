@@ -9,5 +9,6 @@ export default [
     '~/components/ui',
     '~/components/shared',
     '~/components/charts',
+    '~/components/layout',
     '~/pages/products/components',
 ]

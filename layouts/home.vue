@@ -2,12 +2,15 @@
   <v-app>
     <app-navbar />
 
-    <v-main class="pt-0">
+    <v-main class="pt-0 overflow-hidden">
       <v-scroll-x-transition>
         <Nuxt />
       </v-scroll-x-transition>
     </v-main>
 
+    <div class="d-sm-none">
+      <app-sm-menu />
+    </div>
   </v-app>
 </template>
 

@@ -359,3 +359,109 @@
 .v-application .btn-dark-switcher .v-icon {
   transform: rotate(150deg);
 }
+
+.about-section {
+  position: relative;
+
+  .bg-wave-shape {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .about__img {
+    position: relative;
+    max-width: 400px;
+
+    .about-shape {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      z-index: 1;
+      width: 100px;
+    }
+
+    .about-section__img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+.work-stats {
+  background: rgba(251, 255, 255, 1);
+}
+
+.train-about {
+  .section-heading {
+    position: relative;
+  }
+
+  .train-about-shape {
+    position: absolute;
+    top: -20px;
+    left: -190px;
+    z-index: 1;
+    width: 100px;
+  }
+
+  .section-subheading,
+  .section-text {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.apply-now {
+  &__content {
+    position: relative;
+    border-radius: 16px;
+    background-color: rgba(245, 254, 255, 1);
+
+    .shape {
+      position: absolute;
+      top: -30px;
+      right: 50px;
+      z-index: 1;
+      width: 100px;
+    }
+  }
+}
+
+.v-application .features-card {
+  width: 100%;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover {
+    box-shadow: $shadow-lg !important;
+  }
+}
+
+.gallery-img {
+  border-radius: 16px;
+
+  &__more {
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(232.45deg, rgba(0, 117, 141, 0.6) 23.35%, rgba(12, 57, 66, 0.6) 78.51%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    color: transparent !important;
+
+    span {
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+}

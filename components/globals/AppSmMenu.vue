@@ -2,16 +2,16 @@
   <v-navigation-drawer tag="aside" fixed :dark="$isDark()"
     v-model="isVisible" :dir="$dir()"  class="main-sidebar">
     <!-- :color="`${$isDark() ? '' : 'primary'}`" -->
-    <div class="px-4 py-3 d-flex justify-center">
+    <div class="px-4 py-3">
       <nuxt-link :to="localePath('/')">
         <!-- <img width="120" src="//logo.svg"  /> -->
-        <v-img :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" :alt="$t('appName')" />
+        <v-img max-width="125px" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" :alt="$t('appName')" />
       </nuxt-link>
     </div>
 
     <!-- :color="`${$isDark() ? '' : 'primary'}`" -->
     <v-divider class="mb-2"></v-divider>
-    <div class="d-flex align-center gap py-2 px-4">
+    <!-- <div class="d-flex align-center gap py-2 px-4">
       <v-avatar class="cursor-pointer">
         <img
           src="/imgs/user-logo.svg"
@@ -19,10 +19,19 @@
         />
       </v-avatar>
       <span>User Name</span>
+    </div> -->
+    <div class="px-4">
+      <v-btn nuxt to="/auth/login" depressed class="w-100 mb-4 font-weight-bold" color="primary">
+        تسجيل الدخول
+      </v-btn>
+      <v-btn nuxt to="/auth/register" depressed color="primary"
+      class="w-100 font-weight-bold">
+        التقديم الآن
+      </v-btn>
     </div>
+
     <v-list class="main-sidebar__links">
       <div v-for="(link, i) in links" :key="i">
-        <!-- link with sublinks group -->
         <v-list-group v-if="link.children && link.children.length"
         no-action :value="link.to && hasRoute(link.to)"
         :class="{'expanded-active-list': link.to && hasRoute(link.to)}" :prepend-icon="link.icon">
