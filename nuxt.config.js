@@ -55,44 +55,11 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/i18n',
     '@nuxtjs/axios',
     '@nuxtjs/auth-next',
     'nuxt-highcharts',
     'vue2-editor/nuxt',
   ],
-  // https://i18n.nuxtjs.org/
-  i18n: {
-    strategy: 'prefix_except_default',
-    seo: true,
-    defaultLocale: 'ar',
-    defaultDirection: 'rtl',
-    fallbackLocale: 'ar',
-    detectBrowserLanguage: false,
-    locales: [
-      { code: 'ar', name: 'العربية', iso: 'ar', dir: 'rtl' },
-      { code: 'en', name: 'English', iso: 'en', dir: 'ltr' },
-    ],
-    vueI18n: {
-      fallbackLocale: 'ar',
-      messages: {
-        ar: require('./locales/ar.json'),
-        en: require('./locales/en.json'),
-      },
-    },
-    // sync vuetify with i18n
-    onBeforeLanguageSwitch: (oldLocale, newLocale, isInitialSetup, context) => {
-      const locale = context.i18n.locales.find(
-        (lang) => lang.iso === newLocale,
-      ) || { langCode: 'ar', dir: 'rtl' };
-      const isRTL = locale.dir === 'rtl';
-      if (isInitialSetup) {
-        context.app.vuetify.preset.rtl = isRTL;
-      }
-      context.app.vuetify.framework.lang.current = locale.langCode;
-      context.app.vuetify.framework.rtl = isRTL;
-    },
-  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
