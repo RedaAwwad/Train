@@ -3,19 +3,12 @@ import autoLoadComponents from './config/auto-load-components';
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head() {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true });
-    let pageDirection = 'rtl';
-
-    if (i18nHead.htmlAttrs && i18nHead.htmlAttrs.lang) {
-      pageDirection = i18nHead.htmlAttrs.lang == 'ar' ? 'rtl' : 'ltr';
-    }
-
     return {
       titleTemplate: '%s',
       title: 'القطار',
       htmlAttrs: {
-        dir: pageDirection,
-        ...i18nHead.htmlAttrs,
+        dir: 'rtl',
+        lang: 'ar'
       },
       meta: [
         { charset: 'utf-8' },

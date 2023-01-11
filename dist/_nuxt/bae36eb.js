@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[66],{1015:function(t,n,e){"use strict";e.r(n);var o={name:"TableNote",props:{note:{type:String}}},l=e(39),component=Object(l.a)(o,(function(){var t=this;return(0,t._self._c)("div",{staticClass:"mt-10 text-h5"},[t._v("\n  "+t._s(t.note)+"\n")])}),[],!1,null,null,null);n.default=component.exports}}]);
