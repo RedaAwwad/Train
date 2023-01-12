@@ -1,6 +1,6 @@
-export default function ({ store, redirect, localePath }) {
+export default function ({ store, redirect }) {
     if (store.$auth.loggedIn) {
-        return redirect(localePath('/'));
+        return redirect('/');
     }
 
     return true;

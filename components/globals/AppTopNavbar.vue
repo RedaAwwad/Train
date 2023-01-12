@@ -26,8 +26,8 @@
         transition="slide-y-transition"
         :close-on-content-click="false"
         :nudge-width="120"
-        :right="$dir() === 'ltr'"
-        :left="$dir() === 'rtl'"
+        :right="false"
+        left
         offset-y
       >
         <template v-slot:activator="{ on, attrs }">
@@ -58,8 +58,8 @@
         transition="slide-y-transition"
         :close-on-content-click="false"
         :nudge-width="120"
-        :right="$dir() === 'ltr'"
-        :left="$dir() === 'rtl'"
+        :right="false"
+        left
         offset-y
       >
         <template v-slot:activator="{ on, attrs }">
@@ -90,8 +90,8 @@
         transition="slide-y-transition"
         :close-on-content-click="false"
         :nudge-width="120"
-        :right="$dir() === 'ltr'"
-        :left="$dir() === 'rtl'"
+        :right="false"
+        left
         offset-y
       >
         <template v-slot:activator="{ on, attrs }">
@@ -127,7 +127,6 @@
       <app-dark-switcher />
     </div>
 
-    <!-- <app-notifications link-only /> -->
     <v-divider vertical class="d-none d-lg-block ms-4"></v-divider>
     <div class="user__avatar d-flex align-center">
       <v-btn :icon="screenWidth < 960" :x-small="screenWidth < 960" link text to="#" class="mx-lg-3 font-weight-regular text-button">
@@ -142,8 +141,8 @@
         transition="slide-y-transition"
         :close-on-content-click="false"
         :nudge-width="120"
-        :right="$dir() === 'rtl'"
-        :left="$dir() === 'ltr'"
+        :right="false"
+        left
         offset-y
       >
         <template v-slot:activator="{ on, attrs }">

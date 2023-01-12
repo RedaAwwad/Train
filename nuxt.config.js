@@ -32,10 +32,8 @@ export default {
   plugins: [
     { src: '~/plugins/axios' },
     { src: '~/services/api' },
-    { src: '~/plugins/rtl-ltr' },
     { src: '~/plugins/vue-notification', mode: 'client' },
     { src: '~/plugins/is-dark-theme' },
-    { src: '~/plugins/vue2-editor', ssr: false },
     { src: '~/plugins/vue-video-background.js', mode: 'client' },
     { src: '~/plugins/reveal-animation.js', mode: 'client' },
   ],
@@ -58,7 +56,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/auth-next',
     'nuxt-highcharts',
-    'vue2-editor/nuxt',
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

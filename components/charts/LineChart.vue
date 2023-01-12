@@ -68,7 +68,7 @@ export default {
           width: this.width,
           height: this.height,
           style: {
-            direction: this.$dir()
+            direction: 'rtl'
           },
         },
         xAxis: {
@@ -76,7 +76,6 @@ export default {
           // type: 'logarithmic',
           // tickInterval: 1,
           categories: this.xData,
-          // reversed: this.$dir() === 'rtl'
         },
 
         yAxis: {

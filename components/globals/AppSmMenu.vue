@@ -1,11 +1,11 @@
 <template>
   <v-navigation-drawer tag="aside" fixed :dark="$isDark()"
-    v-model="isVisible" :dir="$dir()"  class="main-sidebar">
+    v-model="isVisible" dir="rtl"  class="main-sidebar">
     <!-- :color="`${$isDark() ? '' : 'primary'}`" -->
     <div class="px-4 py-3">
-      <nuxt-link :to="localePath('/')">
+      <nuxt-link to="/">
         <!-- <img width="120" src="//logo.svg"  /> -->
-        <v-img max-width="125px" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" :alt="$t('appName')" />
+        <v-img max-width="125px" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" />
       </nuxt-link>
     </div>
 
@@ -49,7 +49,7 @@
         </v-list-group>
         <!-- link with no sublinks -->
         <v-list-item v-else :to="link.to" router exact
-        :class="{'v-list-item--active' : isIndexDashboard && link.to === localePath('/')}">
+        :class="{'v-list-item--active' : isIndexDashboard && link.to === '/'}">
           <v-list-item-action>
             <v-icon>{{ link.icon }}</v-icon>
           </v-list-item-action>

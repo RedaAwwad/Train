@@ -1,47 +1,4 @@
 <template>
-  <!--
-    USE MODAL IN PERANT
-      <app-confirmation-modal
-         :dialog="confirmationModal"
-         :modalTitle="modalTitle"
-         :actionName="actionName"
-         @agree="agree"
-         @cansel="cansel"
-       />
-
-    EVENT IN TARGET BTN
-      @click="fireconfirmationModal('ActivateTermAccount','DoYouWantToActivateTermAccount',)"
-
-
-    methods
-      agree(action) {
-        this[`${action}`]();
-        this.confirmationModal = false;
-      },
-      cansel() {
-        this.confirmationModal = false;
-      },
-      fireconfirmationModal(action, title) {
-        this.confirmationModal = true;
-        this.modalTitle = this.$t(`${title}`);
-        this.actionName = action;
-      },
-
-    >> Run Action
-      action(){
-        axios
-        >> after success
-            this.confirmationModal = false;
-            this.alert.content = this.$t('ImplementedSuccessfully');
-            this.alert.show = true;
-            this.alert.type = 'success';
-        >> after error
-            this.alert.content = this.$t('canseled');
-            this.alert.show = true;
-            this.alert.type = 'warning';
-      }
-
-   -->
   <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="490">
       <v-card>
@@ -55,10 +12,10 @@
         </v-card-text>
         <v-card-actions class="d-flex justify-center">
           <v-btn color="red" min-width="120" dark @click="cansel()">
-            {{ $t('cansel') }}
+            إلغاء
           </v-btn>
           <v-btn color="primary" min-width="120" @click="agree()">
-            {{ $t('agree') }}
+            موافق
           </v-btn>
         </v-card-actions>
       </v-card>

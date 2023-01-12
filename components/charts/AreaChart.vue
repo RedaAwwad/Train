@@ -66,7 +66,7 @@ export default {
           //   ]
           // },
           style: {
-            direction: this.$dir()
+            direction: 'rtl'
           },
         },
         colorAxis: {
@@ -76,7 +76,6 @@ export default {
         xAxis: {
           title: false,
           categories: this.xData,
-          // reversed: this.$dir() === 'rtl'
         },
 
         yAxis: {

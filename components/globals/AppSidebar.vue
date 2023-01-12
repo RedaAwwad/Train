@@ -1,9 +1,9 @@
 <template>
   <v-navigation-drawer tag="aside" fixed app :dark="$isDark()"
-    v-model="isVisible" :dir="$dir()" :right="$dir() === 'rtl'" :color="`${$isDark() ? '' : 'primary'}`" class="main-sidebar">
+    v-model="isVisible" dir="rtl" :color="`${$isDark() ? '' : 'primary'}`" class="main-sidebar">
     <div class="mb-2 px-4 py-3 d-flex justify-center">
-      <nuxt-link :to="localePath('/')">
-        <img width="120" src="/logo.svg" :alt="$t('appName')" />
+      <nuxt-link to="/">
+        <img width="120" src="/logo.svg" />
       </nuxt-link>
     </div>
 
@@ -27,7 +27,7 @@
         </v-list-group>
         <!-- link with no sublinks -->
         <v-list-item v-else :to="link.to" router exact
-        :class="{'v-list-item--active' : isIndexDashboard && link.to === localePath('/')}">
+        :class="{'v-list-item--active' : isIndexDashboard && link.to === '/'}">
           <v-list-item-action>
             <v-icon>{{ link.icon }}</v-icon>
           </v-list-item-action>

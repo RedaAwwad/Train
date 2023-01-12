@@ -115,7 +115,7 @@ export default {
     xDataFilters() {
       if(['day', 'week', 'month'].includes(this.chartsFilter)) {
         let filters = {
-          day: [this.$t('monthsText.jan'), this.$t('monthsText.feb'), this.$t('monthsText.mar'), this.$t('monthsText.apr'), this.$t('monthsText.may'), this.$t('monthsText.jun'), this.$t('monthsText.jul'), this.$t('monthsText.aug'), this.$t('monthsText.sep'), this.$t('monthsText.oct'), this.$t('monthsText.nov'), this.$t('monthsText.dec')],
+          day: [],
           week: [],
           month: []
         }
