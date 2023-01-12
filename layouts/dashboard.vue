@@ -5,7 +5,7 @@
     <app-top-navbar />
     <v-main :dark="$isDark()" :class="{ light: !$isDark() }">
       <v-scroll-x-transition>
-        <v-container class="main-page-container py-8">
+        <v-container fluid class="py-8">
           <Nuxt />
         </v-container>
       </v-scroll-x-transition>

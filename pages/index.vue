@@ -6,10 +6,10 @@
       src="/video/hero.mp4" poster="/imgs/hero.png">
         <div class="main-header__content">
           <h1 class="hero-heading mb-4 pa-4 white--text">
-              التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه
+              التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 هـ
           </h1>
           <v-btn link href="https://google.com" depressed color="white"
-          class="py-4 py-sm-3 px-8 px-sm-6">
+          class="hero-btn">
               <div class="d-flex align-center gap-sm font-weight-bold primary--text">
               <span>التقديم الآن</span>
               <v-icon>mdi-arrow-left-thin</v-icon>
@@ -33,8 +33,12 @@
               <img src="/imgs/stars.svg" alt="stars icon">
               <span class="font-weight-bold primary--text">قطار المشاعر المقدسة</span>
             </div>
-            <h2 class="section-heading mb-4 font-weight-bold text-center text-sm-start reveal">عن مشروع تشغيل ادارة الحشود لقطار المشاعر المقدسة</h2>
-            <p class="section-text text-center text-sm-start reveal">بناء على إسناد مهمة تنفيذ مرشوع تشغيل إدارة الحشود لقطار المشاعر المقدسة لموسم حج 1444 هـ عىل رشكة اليمامة بموجب عقدها المربم مع رشكة الخطوط الحديدية السعودية (سار) ، عليه ولما كان تشغيل المرشوع الموسمي بحاجة لتوظيف وتشغيل موظفني موسميني، تنتهي مهامهم بانتهاء موسم حج 1444 هـ.</p>
+            <h2 class="section-heading mb-4 font-weight-bold text-center text-sm-start reveal">
+              عن مشروع تشغيل ادارة الحشود لقطار المشاعر المقدسة
+            </h2>
+            <p class="section-text text-center text-sm-start reveal">
+              بناء على إسناد مهمة تنفيذ مشروع تشغيل إدارة الحشود لقطار المشاعر المقدسة لموسم حج 1444 هـ على شركة اليمامة بموجب عقدها المبرم مع شركة الخطوط الحديدية السعودية (سار) ، عليه ولما كان تشغيل المشروع الموسمي بحاجة لتوظيف وتشغيل موظفين موسميين، تنتهي مهامهم بانتهاء موسم حج 1444 هـ
+            </p>
           </v-col>
           <v-col cols="12" lg="1"></v-col>
         </v-row>
@@ -57,7 +61,7 @@
               <v-img width="65" src="/imgs/case.svg"></v-img>
               <h3 class="py-4 text-h4 white--text">7,000 موظف</h3>
               <p class="secondary--text">
-                موظفني بعدة مسميات وظيفية يعملون في خدمة ضيوف الرحمن ضمن وظائف متعددة من ادارة المحطات.
+                موظفين بعدة مسميات وظيفية يعملون في خدمة ضيوف الرحمن ضمن وظائف متعددة من ادارة المحطات.
               </p>
             </v-card>
           </v-col>
@@ -66,7 +70,7 @@
               <v-img width="65" src="/imgs/chart.svg"></v-img>
               <h3 class="py-4 text-h4 white--text">%90 سعودين</h3>
               <p class="secondary--text">
-                زيادة نسبة توطني الوظائف وزيادة فرص العمل لمواطين المملكة.
+                زيادة نسبة توطين الوظائف وزيادة فرص العمل لمواطني المملكة.
               </p>
             </v-card>
           </v-col>
@@ -75,8 +79,7 @@
               <v-img width="70" src="/imgs/translate.svg"></v-img>
               <h3 class="py-4 text-h4 white--text">4 لغات</h3>
               <p class="secondary--text">
-                نتوفر على عدة موظفين يتحدثون
- 4 لغات وأكثر.
+                موظفين يتحدثون 4 لغات مختلفة.
               </p>
             </v-card>
           </v-col>
@@ -88,7 +91,7 @@
       <v-container class="main-page-container">
         <div class="mb-16">
           <div class="d-flex flex-column align-center mb-4 text-center">
-            <h2 class="section-heading font-weight-bold" style="max-width: 600px;">
+            <h2 class="section-heading font-weight-bold">
               <img class="train-about-shape" src="/imgs/shape.png" alt="shape" />
               <span class="reveal">
                 كل ما تود معرفته عن قطار المشاعر المقدسة
@@ -98,7 +101,9 @@
               قطار المشاعر المقدسة هو خط سكة حديدية يربط مكة المكرمة بالمشاعر المقدسة وهي
             </h3>
           </div>
-          <p class="section-text mx-auto text-center reveal" style="max-width: 700px;"> منى، وعرفات، ومزدلفة. ويتكون المرشوع من 17 قطاًرا، تضم 204 عربة، وتستوعب كل عربة منهم 300 راكب، وهناك عربتان أمامية وخلفية للقيادة. ويبلغ طول المسار نحو 1.18 كم، ويرتفع بنحو 8-10 أمتار عن سطح الأرض، ويصل إلى 45 م ًرتا عند منشأة الجمرات، وتبلغ طاقته الاستيعابية 72,000 شخص في الساعة الواحدة. ويحتوي المرشوع على تسعة محطات، بطول 300 مرت لكل محطة، تبدأ من مكة المكرمة، ثم يمر القطار بثالث محطات في مشعر عرفات، وثالثة في مشعر مزدلفة، ثم محطة في بداية مشعر منى، وأخرى وسطه، وتكون المحطة الأخرية عند الدور الرابع بجرس الجمرات.</p>
+          <p class="section-text mx-auto text-center reveal" style="max-width: 700px;"> 
+            قطار المشاعر المقدسة هو خط سكة حديدية يربط مكة المكرمة بالمشاعر المقدسة وهي: منى، وعرفات، ومزدلفة. ويتكون المشروع من 17 قطارًا، تضم 204 عربة، وتستوعب كل عربة منهم 300 راكب، وهناك عربتان أمامية وخلفية للقيادة. ويبلغ طول المسار نحو 18.1 كم، ويرتفع بنحو 8-10 أمتار عن سطح الأرض، ويصل إلى 45 مترًا عند منشأة الجمرات، وتبلغ طاقته الاستيعابية 72,000 شخص في الساعة الواحدة. ويحتوي المشروع على تسعة محطات، بطول 300 متر لكل محطة، تبدأ من مكة المكرمة، ثم يمر القطار بثلاث محطات في مشعر عرفات، وثلاثة في مشعر مزدلفة، ثم محطة في بداية مشعر منى، وأخرى وسطه، وتكون المحطة الأخيرة عند الدور الرابع بجسر الجمرات.
+          </p>
         </div>
         <v-row class="gallery-imgs reveal" justify="center">
           <v-col cols="12" sm="5" md="3">
@@ -132,7 +137,7 @@
             التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالأسفل
           </p>
           <v-btn link href="https://google.com" depressed color="accent"
-          class="py-3 px-6 reveal">
+          class="hero-btn py-3 px-6 reveal">
               <div class="d-flex align-center gap-sm font-weight-bold white--text">
               <span>التقديم الأن</span>
               <v-icon>mdi-arrow-left-thin</v-icon>

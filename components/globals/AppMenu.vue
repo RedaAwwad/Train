@@ -24,7 +24,7 @@
         <span>User Name</span>
       </div>
 
-      <v-expansion-panels accordion>
+      <v-expansion-panels accordion flat>
         <v-expansion-panel
           v-for="(link,i) in links"
           :key="i"
@@ -33,39 +33,19 @@
             {{ link.title }}
           </v-expansion-panel-header>
           <v-expansion-panel-content>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <v-list dense>
+              <v-list-item-group color="primary">
+                <v-list-item v-for="(sub, k) in link.children" :key="k"
+                :to="link.url" router exact>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="sub.title"></v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list-item-group>
+            </v-list>
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
-  
-      <!-- <v-list class="main-sidebar__links">
-        <div v-for="(link, i) in links" :key="i">
-          <v-list-group v-if="link.children && link.children.length"
-          no-action :value="link.to && hasRoute(link.to)"
-          :class="{'expanded-active-list': link.to && hasRoute(link.to)}" :prepend-icon="link.icon">
-            <template v-slot:activator>
-              <v-list-item-content>
-                <v-list-item-title>{{ link.title }}</v-list-item-title>
-              </v-list-item-content>
-            </template>
-  
-            <v-list-item v-for="(child, k) in link.children" :key="k" :to="child.to" router exact>
-              <v-list-item-content>
-                <v-list-item-title v-text="child.title" />
-              </v-list-item-content>
-            </v-list-item>
-          </v-list-group>
-          <v-list-item v-else :to="link.to" router exact
-          :class="{'v-list-item--active' : isIndexDashboard && link.to === '/'}">
-            <v-list-item-action>
-              <v-icon>{{ link.icon }}</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title v-text="link.title" />
-            </v-list-item-content>
-          </v-list-item>
-        </div>
-      </v-list> -->
     </v-navigation-drawer>
   </template>
   
