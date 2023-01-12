@@ -127,7 +127,7 @@
 
     <v-divider vertical class="d-none d-lg-block ms-4"></v-divider>
     <div class="user__avatar d-flex align-center">
-      <v-btn :icon="screenWidth < 960" :x-small="screenWidth < 960" link text to="#" class="mx-lg-3 font-weight-regular text-button d-none d-sm-block">
+      <v-btn :icon="screenWidth < 960" :x-small="screenWidth < 960" link text to="#" class="mx-lg-3 font-weight-regular text-button d-none d-sm-flex">
         <v-icon :size="`${screenWidth < 960 ? '16px' : '20px'}`" :color="`${$isDark() ? 'white' : 'dark-gray'}`" class="mx-1">
           mdi-open-in-new
         </v-icon>
