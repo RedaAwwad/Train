@@ -55,7 +55,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth-next',
     'nuxt-highcharts',
   ],
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -64,29 +63,8 @@ export default {
     baseURL: process.env.API_BASE_URL,
     retries: 3,
   },
-  auth: {
-    strategies: {
-      local: {
-        token: {
-          property: 'data.token',
-          global: true,
-          // required: true,
-          // type: 'Bearer'
-        },
-        user: {
-          property: 'data',
-          autoFetch: true
-        },
-        endpoints: {
-          user: { url: '/profile', method: 'get' },
-          login: { url: '/login', method: 'post' },
-          logout: { url: '/logout', method: 'delete' },
-        }
-      }
-    }
-  },
   router: {
-    base: '/train/'
+    // base: '/train/'
   },
   highcharts: {
     modules: ['node_modules/highcharts/modules/variable-pie.js'],
@@ -100,9 +78,5 @@ export default {
   env: {
     BASE_URL: process.env.BASE_URL,
   },
-  build: {
-    extend: {
-      transpile: [/^vue2-google-maps($|\/)/],
-    },
-  },
+  build: {},
 };
