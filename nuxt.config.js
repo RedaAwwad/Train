@@ -1,6 +1,7 @@
 import autoLoadComponents from './config/auto-load-components';
 
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head() {
     return {
@@ -64,12 +65,6 @@ export default {
     retries: 3,
   },
   auth: {
-    redirect: {
-      login: '/auth/login',
-      logout: '/',
-      callback: '/auth/login',
-      home: '/',
-    },
     strategies: {
       local: {
         token: {
@@ -91,7 +86,7 @@ export default {
     }
   },
   router: {
-    // middleware: ['auth']
+    base: '/train/'
   },
   highcharts: {
     modules: ['node_modules/highcharts/modules/variable-pie.js'],

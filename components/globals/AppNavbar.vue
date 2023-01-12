@@ -18,11 +18,11 @@
       
         <v-spacer></v-spacer>
         <div class="d-none d-sm-flex align-center gap-sm">
-            <v-btn nuxt to="/auth/login" text class="font-weight-bold" 
+            <v-btn nuxt to="/" text class="font-weight-bold" 
             :class="`${scrollTop < 100 ? 'white--text' : ''}`">
                 تسجيل الدخول
             </v-btn>
-            <v-btn nuxt to="/auth/register" depressed color="primary"
+            <v-btn nuxt to="/" depressed color="primary"
             class="font-weight-bold">
                 التقديم الآن
             </v-btn>

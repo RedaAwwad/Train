@@ -10,7 +10,8 @@
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:prettier",
     "lintfix": "prettier --write --list-different .",
-    "analyze": "nuxt build --analyze"
+    "analyze": "nuxt build --analyze",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "license": "ISC",
   "dependencies": {
@@ -37,6 +38,7 @@
     "@nuxtjs/vuetify": "^1.12.3",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1",
+    "push-dir": "^0.4.1",
     "sass": "^1.32.13",
     "sass-loader": "^10.3.1"
   }

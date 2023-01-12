@@ -21,10 +21,10 @@
       <span>User Name</span>
     </div> -->
     <div class="px-4">
-      <v-btn nuxt to="/auth/login" depressed class="w-100 mb-4 font-weight-bold" color="primary">
+      <v-btn nuxt to="/" depressed class="w-100 mb-4 font-weight-bold" color="primary">
         تسجيل الدخول
       </v-btn>
-      <v-btn nuxt to="/auth/register" depressed color="primary"
+      <v-btn nuxt to="/" depressed color="primary"
       class="w-100 font-weight-bold">
         التقديم الآن
       </v-btn>

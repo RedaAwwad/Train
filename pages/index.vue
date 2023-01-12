@@ -8,7 +8,7 @@
           <h1 class="hero-heading mb-4 pa-4 white--text">
               التقديم للوظائف الموسمية إلدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444
           </h1>
-          <v-btn nuxt to="/auth/register" depressed color="white"
+          <v-btn nuxt to="/" depressed color="white"
           class="py-3 px-6">
               <div class="d-flex align-center gap-sm font-weight-bold primary--text">
               <span>التقديم الآن</span>
@@ -134,7 +134,7 @@
           <p class="section-text mb-6 text-center reveal" style="max-width: 600px;">
             التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالسفل
           </p>
-          <v-btn nuxt to="/auth/register" depressed color="accent"
+          <v-btn nuxt to="/" depressed color="accent"
           class="py-3 px-6 reveal">
               <div class="d-flex align-center gap-sm font-weight-bold white--text">
               <span>ابدأ التقديم</span>
