@@ -1,7 +1,7 @@
 @use '../base/variables' as *;
 
 .top-navbar.v-app-bar {
-  transition: background-color .2s ease-in-out;
+  // transition: background-color .2s ease-in-out;
 
   &.border-bottom {
     .v-toolbar__content {

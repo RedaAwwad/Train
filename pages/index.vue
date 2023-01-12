@@ -1,15 +1,15 @@
 <template>
-  <div class="">
-    <client-only>
+  <div>
+    <div class="header-container">
       <video-background
       class="main-header py-8 mb-10"
       src="/video/hero.mp4" poster="/imgs/hero.png">
         <div class="main-header__content">
           <h1 class="hero-heading mb-4 pa-4 white--text">
-              التقديم للوظائف الموسمية إلدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444
+              التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه
           </h1>
-          <v-btn nuxt to="/" depressed color="white"
-          class="py-3 px-6">
+          <v-btn link href="https://google.com" depressed color="white"
+          class="py-4 py-sm-3 px-8 px-sm-6">
               <div class="d-flex align-center gap-sm font-weight-bold primary--text">
               <span>التقديم الآن</span>
               <v-icon>mdi-arrow-left-thin</v-icon>
@@ -17,7 +17,7 @@
           </v-btn>
         </div>
       </video-background>
-    </client-only>
+    </div>
     <section class="about-section mb-8 overflow-hidden">
       <v-container class="main-page-container">
         <img class="bg-wave-shape" src="/imgs/wave-shape.png" alt="shape wave" />
@@ -100,23 +100,20 @@
           </div>
           <p class="section-text mx-auto text-center reveal" style="max-width: 700px;"> منى، وعرفات، ومزدلفة. ويتكون المرشوع من 17 قطاًرا، تضم 204 عربة، وتستوعب كل عربة منهم 300 راكب، وهناك عربتان أمامية وخلفية للقيادة. ويبلغ طول المسار نحو 1.18 كم، ويرتفع بنحو 8-10 أمتار عن سطح الأرض، ويصل إلى 45 م ًرتا عند منشأة الجمرات، وتبلغ طاقته الاستيعابية 72,000 شخص في الساعة الواحدة. ويحتوي المرشوع على تسعة محطات، بطول 300 مرت لكل محطة، تبدأ من مكة المكرمة، ثم يمر القطار بثالث محطات في مشعر عرفات، وثالثة في مشعر مزدلفة، ثم محطة في بداية مشعر منى، وأخرى وسطه، وتكون المحطة الأخرية عند الدور الرابع بجرس الجمرات.</p>
         </div>
-        <v-row class="gallery-imgs" justify="center">
-          <v-col cols="12" sm="5" md="3" class="reveal">
+        <v-row class="gallery-imgs reveal" justify="center">
+          <v-col cols="12" sm="5" md="3">
             <v-img height="425" class="gallery-img" src="/imgs/img1.png"></v-img>
           </v-col>
           <v-col cols="12" sm="7" lg="6">
             <v-row>
-              <v-col cols="12" class="reveal">
+              <v-col cols="12">
                 <v-img height="200" class="gallery-img" src="/imgs/img2.png"></v-img>
               </v-col>
-              <v-col cols="12" md="6" lg="7" class="reveal">
+              <v-col cols="12" md="6" lg="7">
                 <v-img height="200" class="gallery-img" src="/imgs/img3.png"></v-img>
               </v-col>
-              <v-col cols="12" md="6" lg="5" class="reveal">
-                <div class="gallery-img__more">
-                  <a href="#" class="gallery-img__overlay"><span>+12</span></a>
-                  <v-img height="200" class="gallery-img" src="/imgs/img4.png"></v-img>
-                </div>
+              <v-col cols="12" md="6" lg="5">
+                <v-img height="200" class="gallery-img" src="/imgs/img4.png"></v-img>
               </v-col>
             </v-row>
           </v-col>
@@ -129,31 +126,31 @@
         <img class="shape d-none d-sm-inline-block" src="/imgs/shape.png" alt="shape" />
         <div class="d-flex flex-column align-center mb-4">
           <h2 class="section-heading font-weight-bold reveal" style="max-width: 600px;">
-            قدم الآن لوظيفتك ماذا تنتظر؟
+            التقديم الآن للوظائف الموسمية
           </h2>
-          <p class="section-text mb-6 text-center reveal" style="max-width: 600px;">
-            التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالسفل
+          <p class="section-text mb-6 text-center reveal" style="max-width: 625px;">
+            التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالأسفل
           </p>
-          <v-btn nuxt to="/" depressed color="accent"
+          <v-btn link href="https://google.com" depressed color="accent"
           class="py-3 px-6 reveal">
               <div class="d-flex align-center gap-sm font-weight-bold white--text">
-              <span>ابدأ التقديم</span>
+              <span>التقديم الأن</span>
               <v-icon>mdi-arrow-left-thin</v-icon>
               </div>
           </v-btn>
         </div>
         </v-container>
-      </section>
+    </section>
 
-      <footer>
-        <v-container class="main-page-container">
-          <div class="d-flex align-center justify-center gap mb-3">
-            <v-img max-width="125" src="/imgs/logo1.svg"></v-img>
-            <v-img max-width="100" src="/imgs/al-yamama-logo.svg"></v-img>
-          </div>
-          <p class="py-4 text-center">جميع الحقوق محفوظة © 2023 </p>
-        </v-container>
-      </footer>
+    <footer>
+      <v-container class="main-page-container">
+        <div class="d-flex align-center justify-center gap mb-3">
+          <img style="max-width: 125px;" src="/imgs/logo1.svg" />
+          <img style="max-width: 100px;" src="/imgs/al-yamama-logo.svg" />
+        </div>
+        <p class="py-4 text-center">جميع الحقوق محفوظة © 2023 </p>
+      </v-container>
+    </footer>
   </div>
 </template>
 
@@ -162,5 +159,16 @@
 export default {
   name: 'VendorHomePage',
   layout: 'home',
+  mounted() {
+    if(this.$isDark()) {
+      this.$vuetify.theme.dark = 'light';
+      localStorage.setItem("app_dark_theme", 'light');
+    }
+  }
 }
 </script>
+<style>
+.header-container {
+  min-height: 100vh;
+}
+</style>

@@ -10,19 +10,19 @@
     >
       <v-container class="main-page-container d-flex align-center px-0">
         <nuxt-link to="/">
-            <v-img :max-width="`${screenWidth < 580 ? '180px' : '220px'}`" :src="`/imgs/logo${$isDark() || scrollTop < 100 ? '-light' : ''}${screenWidth < 580 ? '-sm.svg' : '.svg'}`" alt="القطار"></v-img>
+            <img :style="`width: ${screenWidth < 580 ? '100px' : '250px'};`" :src="`/imgs/logo${$isDark() || scrollTop < 100 ? '-light' : ''}${screenWidth < 580 ? '-sm.svg' : '.svg'}`" alt="القطار" />
         </nuxt-link>
         <div class="ms-4">
-            <v-img :max-width="`${screenWidth < 580 ? '90px' : '110px'}`" :src="`/imgs/alyamama${$isDark() || scrollTop < 100 ? '-light' : ''}.svg`" class="reverse-color" alt="alyamama"></v-img>
+            <img :style="`width: ${screenWidth < 580 ? '100px' : '130px'};`" :src="`/imgs/alyamama${$isDark() || scrollTop < 100 ? '-light' : ''}.svg`" class="reverse-color" alt="alyamama" />
         </div>
       
         <v-spacer></v-spacer>
         <div class="d-none d-sm-flex align-center gap-sm">
-            <v-btn nuxt to="/" text class="font-weight-bold" 
+            <v-btn link href="https://google.com" text class="font-weight-bold" 
             :class="`${scrollTop < 100 ? 'white--text' : ''}`">
                 تسجيل الدخول
             </v-btn>
-            <v-btn nuxt to="/" depressed color="primary"
+            <v-btn link href="https://google.com" depressed color="primary"
             class="font-weight-bold">
                 التقديم الآن
             </v-btn>

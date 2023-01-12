@@ -12,7 +12,7 @@
     </v-main>
 
     <div class="d-lg-none">
-      <app-sm-menu />
+      <app-menu />
     </div>
   </v-app>
 </template>

@@ -10,11 +10,11 @@
     <!-- <v-btn icon @click.stop="toggleSidebar">
       <v-icon>mdi-menu</v-icon>
     </v-btn> -->
-    <nuxt-link to="/">
-      <v-img :max-width="`${screenWidth < 580 ? '180px' : '220px'}`" :src="`/imgs/logo${$isDark() ? '-light' : ''}.svg`" alt="القطار"></v-img>
+    <nuxt-link to="/" class="ml-4">
+      <img :style="`max-width: ${screenWidth < 580 ? '180px' : '220px'}`" :src="`/imgs/logo${$isDark() ? '-light' : ''}.svg`" alt="القطار" />
     </nuxt-link>
     <div class="d-none d-sm-block ms-4">
-        <v-img max-width="110" :src="`/imgs/alyamama${$isDark() ? '-light' : ''}.svg`" class="reverse-color" alt="alyamama"></v-img>
+        <img style="max-width: 110px;" :src="`/imgs/alyamama${$isDark() ? '-light' : ''}.svg`" class="reverse-color" alt="alyamama" />
     </div>
 
     <v-divider vertical class="d-none d-lg-inline-block mx-4"></v-divider>
@@ -123,13 +123,11 @@
     <v-spacer></v-spacer>
     <v-divider vertical class="d-inline-block d-lg-none me-4"></v-divider>
 
-    <div class="d-none d-sm-block">
-      <app-dark-switcher />
-    </div>
+    <app-dark-switcher />
 
     <v-divider vertical class="d-none d-lg-block ms-4"></v-divider>
     <div class="user__avatar d-flex align-center">
-      <v-btn :icon="screenWidth < 960" :x-small="screenWidth < 960" link text to="#" class="mx-lg-3 font-weight-regular text-button">
+      <v-btn :icon="screenWidth < 960" :x-small="screenWidth < 960" link text to="#" class="mx-lg-3 font-weight-regular text-button d-none d-sm-block">
         <v-icon :size="`${screenWidth < 960 ? '16px' : '20px'}`" :color="`${$isDark() ? 'white' : 'dark-gray'}`" class="mx-1">
           mdi-open-in-new
         </v-icon>
@@ -172,7 +170,7 @@
       <v-btn @click="toggleSidebar" icon :x-small="screenWidth < 960"
       class="d-inline-block d-lg-none mx-3 font-weight-regular text-button">
         <v-icon :size="`${screenWidth < 960 ? '16px' : '20px'}`" :color="`${$isDark() ? 'white' : 'dark-gray'}`" class="mx-1">
-          mdi-dots-vertical
+          mdi-menu
         </v-icon>
       </v-btn>
     </div>

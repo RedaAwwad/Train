@@ -4,8 +4,7 @@
     <!-- :color="`${$isDark() ? '' : 'primary'}`" -->
     <div class="px-4 py-3">
       <nuxt-link to="/">
-        <!-- <img width="120" src="//logo.svg"  /> -->
-        <v-img max-width="125px" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" />
+        <img width="200px" :src="`${$isDark() ? '/imgs/logo-light.svg' : '/imgs/logo.svg'}`" />
       </nuxt-link>
     </div>
 
@@ -20,12 +19,12 @@
       </v-avatar>
       <span>User Name</span>
     </div> -->
-    <div class="px-4">
-      <v-btn nuxt to="/" depressed class="w-100 mb-4 font-weight-bold" color="primary">
+    <div class="pa-4">
+      <v-btn nuxt to="/" depressed class="w-100 mb-4 py-3 font-weight-bold" color="primary">
         تسجيل الدخول
       </v-btn>
       <v-btn nuxt to="/" depressed color="primary"
-      class="w-100 font-weight-bold">
+      class="w-100 py-3 font-weight-bold">
         التقديم الآن
       </v-btn>
     </div>
