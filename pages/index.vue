@@ -18,7 +18,7 @@
         </div>
       </video-background>
     </div>
-    <section class="about-section mb-8 overflow-hidden">
+    <section class="about-section mb-8">
       <v-container class="main-page-container">
         <img class="bg-wave-shape" src="/imgs/wave-shape.png" alt="shape wave" />
         <v-row>
@@ -61,7 +61,7 @@
               <v-img width="65" src="/imgs/case.svg"></v-img>
               <h3 class="py-4 text-h4 white--text">7,000 موظف</h3>
               <p class="secondary--text">
-                موظفين بعدة مسميات وظيفية يعملون في خدمة ضيوف الرحمن ضمن وظائف متعددة من ادارة المحطات.
+                موظفين بعدة مسميات وظيفية يعملون في خدمة ضيوف الرحمن ضمن وظائف متعددة.
               </p>
             </v-card>
           </v-col>
@@ -130,11 +130,11 @@
       <v-container class="main-page-container apply-now__content py-10">
         <img class="shape d-none d-sm-inline-block" src="/imgs/shape.png" alt="shape" />
         <div class="d-flex flex-column align-center mb-4">
-          <h2 class="section-heading font-weight-bold reveal" style="max-width: 600px;">
+          <h2 class="section-heading text-center font-weight-bold reveal" style="max-width: 600px;">
             التقديم الآن للوظائف الموسمية
           </h2>
           <p class="section-text mb-6 text-center reveal" style="max-width: 625px;">
-            التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 ه كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالأسفل
+            التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 هـ كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالأسفل
           </p>
           <v-btn link href="https://google.com" depressed color="accent"
           class="hero-btn py-3 px-6 reveal">

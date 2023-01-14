@@ -8,17 +8,7 @@
       </nuxt-link>
     </div>
 
-    <!-- :color="`${$isDark() ? '' : 'primary'}`" -->
     <v-divider class="mb-2"></v-divider>
-    <!-- <div class="d-flex align-center gap py-2 px-4">
-      <v-avatar class="cursor-pointer">
-        <img
-          src="/imgs/user-logo.svg"
-          alt="user"
-        />
-      </v-avatar>
-      <span>User Name</span>
-    </div> -->
     <div class="pa-4">
       <v-btn nuxt to="/" depressed class="w-100 mb-4 py-3 font-weight-bold" color="primary">
         تسجيل الدخول
