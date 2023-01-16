@@ -504,19 +504,6 @@
  */
 
 
-/*!
- * vue-client-only v0.0.0-semantic-release
- * (c) 2021-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-no-ssr v1.1.1
- * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-
 /**
  * @license Highcharts JS v10.3.2 (2022-11-28)
  *
@@ -714,4 +701,17 @@
  * Author: Torstein Honsi
  *
  * License: www.highcharts.com/license
+ */
+
+
+/*!
+ * vue-client-only v0.0.0-semantic-release
+ * (c) 2021-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * vue-no-ssr v1.1.1
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
  */
