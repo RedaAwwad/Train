@@ -10,10 +10,10 @@
     <!-- <v-btn icon @click.stop="toggleSidebar">
       <v-icon>mdi-menu</v-icon>
     </v-btn> -->
-    <nuxt-link to="/" class="ml-4">
+    <nuxt-link to="/" class="d-flex ml-4">
       <img :style="`max-width: ${screenWidth < 580 ? '180px' : '220px'}`" :src="`/imgs/logo${$isDark() ? '-light' : ''}.svg`" alt="القطار" />
     </nuxt-link>
-    <div class="d-none d-sm-block ms-4">
+    <div class="d-none d-sm-flex ms-4">
         <img style="max-width: 110px;" :src="`/imgs/alyamama${$isDark() ? '-light' : ''}.svg`" class="reverse-color" alt="alyamama" />
     </div>
 

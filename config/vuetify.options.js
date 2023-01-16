@@ -8,7 +8,7 @@ export default function ({ app }) {
         light: {
           primary: '#00778B',
           'primary-2': '#1A8597',
-          accent: '#062F37',
+          accent: '#094C59',
           secondary: '#22DEDE',
           info: '#F89747',
           warning: '#D51C53',

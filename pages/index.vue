@@ -101,7 +101,7 @@
               قطار المشاعر المقدسة هو خط سكة حديدية يربط مكة المكرمة بالمشاعر المقدسة وهي
             </h3>
           </div>
-          <p class="section-text mx-auto text-center reveal" style="max-width: 700px;"> 
+          <p class="section-text mx-auto text-center reveal" style="max-width: 900px;"> 
             قطار المشاعر المقدسة هو خط سكة حديدية يربط مكة المكرمة بالمشاعر المقدسة وهي: منى، وعرفات، ومزدلفة. ويتكون المشروع من 17 قطارًا، تضم 204 عربة، وتستوعب كل عربة منهم 300 راكب، وهناك عربتان أمامية وخلفية للقيادة. ويبلغ طول المسار نحو 18.1 كم، ويرتفع بنحو 8-10 أمتار عن سطح الأرض، ويصل إلى 45 مترًا عند منشأة الجمرات، وتبلغ طاقته الاستيعابية 72,000 شخص في الساعة الواحدة. ويحتوي المشروع على تسعة محطات، بطول 300 متر لكل محطة، تبدأ من مكة المكرمة، ثم يمر القطار بثلاث محطات في مشعر عرفات، وثلاثة في مشعر مزدلفة، ثم محطة في بداية مشعر منى، وأخرى وسطه، وتكون المحطة الأخيرة عند الدور الرابع بجسر الجمرات.
           </p>
         </div>
@@ -133,7 +133,7 @@
           <h2 class="section-heading text-center font-weight-bold reveal" style="max-width: 600px;">
             التقديم الآن للوظائف الموسمية
           </h2>
-          <p class="section-text mb-6 text-center reveal" style="max-width: 625px;">
+          <p class="section-text mb-10 text-center reveal" style="max-width: 625px;">
             التقديم للوظائف الموسمية لإدارة الحشود بقطار المشاعر المقدسة لموسم حج 1444 هـ كل ما عليك فعله هو ملئ استمارة التسجيل عبر الضغط على زر التقديم الآن بالأسفل
           </p>
           <v-btn link href="https://google.com" depressed color="accent"
@@ -150,8 +150,8 @@
     <footer>
       <v-container class="main-page-container">
         <div class="d-flex align-center justify-center gap mb-3">
-          <img style="max-width: 125px;" src="/imgs/logo1.svg" />
-          <img style="max-width: 100px;" src="/imgs/al-yamama-logo.svg" />
+          <img class="opacity-5" style="max-width: 130px;" src="/imgs/logo1.svg" />
+          <img class="opacity-5" style="max-width: 95px;" src="/imgs/al-yamama-logo.svg" />
         </div>
         <p class="py-4 text-center">جميع الحقوق محفوظة © 2023 </p>
       </v-container>

@@ -196,3 +196,11 @@ a.text-blue,
     visibility: visible;
   }
 }
+
+.opacity-5 {
+  opacity: .5;
+}
+
+.btn-navbar.v-btn:not(.v-btn--round).v-size--default {
+  height: 42px;
+}
