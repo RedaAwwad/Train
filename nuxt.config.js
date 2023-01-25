@@ -93,6 +93,7 @@ export default {
   env: {
     BASE_URL: process.env.BASE_URL,
     API_BASE_URL: process.env.API_BASE_URL,
+    API_URL: process.env.API_URL,
     TOKEN: process.env.TOKEN
   },
   build: {},

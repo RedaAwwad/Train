@@ -115,7 +115,7 @@ export const actions = {
       // $axios.defaults.headers = {isJwt: true};
       // $axios.defaults.headers.common = {'Authorization': `bearer ${process.env.TOKEN}`}
       // const url = 'panel/dashboard/kpi?dashboard_type=all';
-      let url = 'http://localhost:3000/api/dashboard';
+      let url = `${process.env.API_BASE_URL}${process.env.API_URL}`;
       let query = null;
 
       for (const param in params) {
