@@ -1,7 +1,7 @@
 import autoLoadComponents from './config/auto-load-components';
 
 export default {
-  target: 'static',
+  target: 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head() {
     return {
@@ -54,9 +54,21 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // '@nuxtjs/auth-next',
     '@nuxtjs/axios',
     'nuxt-highcharts',
   ],
+  // auth: {
+  //   strategies: {
+  //     local: {},
+  //   },
+  //   redirect: {
+  //     login: '/login',
+  //     logout: '/',
+  //     callback: '/login',
+  //     home: '/'
+  //   }
+  // },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
@@ -66,6 +78,9 @@ export default {
   router: {
     // base: '/train/'
   },
+  serverMiddleware: [
+    { path: "/api/dashboard", handler: "~/server-middleware/rest.js" },
+  ],
   highcharts: {
     modules: ['node_modules/highcharts/modules/variable-pie.js'],
   },
@@ -77,6 +92,8 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   env: {
     BASE_URL: process.env.BASE_URL,
+    API_BASE_URL: process.env.API_BASE_URL,
+    TOKEN: process.env.TOKEN
   },
   build: {},
 };

@@ -32,7 +32,7 @@
         type: String
       },
       content: {
-        type: String,
+        type: [String, Number],
         default: '0'
       },
       pieData: {
@@ -42,6 +42,8 @@
     },
     methods: {
       getPercentage(value) {
+        if(!value) return '0%';
+
         let total = this.pieData.reduce((accumulator, current) => {
           if(typeof current[0] === 'number') return accumulator + current[0]
           if(typeof current[1] === 'number') return accumulator + current[1]

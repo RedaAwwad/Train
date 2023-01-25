@@ -29,11 +29,12 @@
         :right="false"
         left
         offset-y
+        v-for="(menu, i) in filters" :key="i"
       >
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" text class="menu-control px-2 font-weight-regular text-button">
             <span class="mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
-              الاحصائيات العامة
+              {{ menu.currentName }}
             </span>
             <v-icon size="20px" color="dark-gray" class="mx-1">mdi-chevron-down</v-icon>
           </v-btn>
@@ -41,79 +42,16 @@
 
         <v-list>
           <v-list-item
-            v-for="(link, i) in avatarLinks"
+            v-for="(link, i) in menu.list"
             :key="i"
-            :to="link.url"
             link
-            nuxt
+            href="javascript:;"
             exact
+            :disabled="link.isCurrent || isLoading"
+            @click="filterCharts(menu.key, link.value)"
           >
             <v-list-item-content>
-              <v-list-item-title tag="span" v-text="link.title"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-      <v-menu
-        transition="slide-y-transition"
-        :close-on-content-click="false"
-        :nudge-width="120"
-        :right="false"
-        left
-        offset-y
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn v-bind="attrs" v-on="on" text class="menu-control px-2 font-weight-regular text-button">
-            <span class="mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
-              جميع الجنسيات
-            </span>
-            <v-icon size="20px" color="dark-gray" class="mx-1">mdi-chevron-down</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item
-            v-for="(link, i) in avatarLinks"
-            :key="i"
-            :to="link.url"
-            link
-            nuxt
-            exact
-          >
-            <v-list-item-content>
-              <v-list-item-title tag="span" v-text="link.title"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-      <v-menu
-        transition="slide-y-transition"
-        :close-on-content-click="false"
-        :nudge-width="120"
-        :right="false"
-        left
-        offset-y
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn v-bind="attrs" v-on="on" text class="menu-control px-2 font-weight-regular text-button">
-            <span class="mx-1" :class="`${$isDark() ? 'white--text' : 'dark-gray--text'}`">
-              جميع الاوقات
-            </span>
-            <v-icon size="20px" color="dark-gray" class="mx-1">mdi-chevron-down</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item
-            v-for="(link, i) in avatarLinks"
-            :key="i"
-            :to="link.url"
-            link
-            nuxt
-            exact
-          >
-            <v-list-item-content>
-              <v-list-item-title tag="span" v-text="link.title"></v-list-item-title>
+              <v-list-item-title tag="span" v-text="link.label"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -158,7 +96,7 @@
             :key="i"
             :to="link.url"
             link
-            nuxt
+            inactive
             exact
           >
             <v-list-item-content>
@@ -178,7 +116,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters, mapState } from 'vuex';
 
 export default {
   name: 'AppTopNavbar',
@@ -188,6 +126,7 @@ export default {
     };
   },
   computed: {
+    ...mapState(['isLoading', 'filters']),
     ...mapGetters({
       isSidebar: 'ui/isSidebar',
     }),
@@ -217,6 +156,31 @@ export default {
     toggleSidebar() {
       this.$store.commit('ui/TOGGLE_SIDEBAR', !this.isSidebar);
     },
+    filterCharts(key, value) {
+      const args = this.formateQuery(key, value);
+      this.$store.dispatch('fetchDashboardData', args);
+    },
+    formateQuery(key, value) {
+      if (this.filters?.length) {
+        const query = {};
+        
+        this.filters.forEach(filter => {
+          if(filter.key === key) {
+            query[filter.key] = value;
+          } else {
+            filter.list.forEach(item => {
+              if(item.isCurrent) {
+                query[filter.key] = item.value;
+              }
+            });
+          }
+        });
+
+        return query;
+      }
+
+      return {};
+    }
   },
 };
 </script>

@@ -28,12 +28,21 @@ export const objectDeepCopy = (obj) => {
  * @param {string} error 
  */
 export const formatError = (error) => {
-  const errorStatus = error?.response?.status;
-  if (!errorStatus) return null;
-
-  return {
-    status: errorStatus,
-    data: error.response?.data
+  if (error.response) {
+    return {
+      status: error.response.status,
+      data: error.response.data
+    }
+  } else if (error.request) {
+    return {
+      status: 500,
+      data: error.request
+    }
+  } else {
+    return {
+      status: 500,
+      data: error.message
+    }
   }
 }
 

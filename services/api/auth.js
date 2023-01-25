@@ -1,16 +1,16 @@
 import { formatError } from '@/utils';
 
 export default class Auth {
-    constructor(SERVICE) {
-        this.SERVICE = SERVICE;
+    constructor($http) {
+        this.$http = $http;
     }
 
-    async login(data) {
+    login(data) {
         const url = 'login';
 
-        return await new Promise(async (resolve, reject) => {
+        return new Promise(async (resolve, reject) => {
             try {
-                const response = await this.SERVICE.post(url, data);
+                const response = await this.$http.post(url, data);
 
                 return resolve(response.data);
             } catch (error) {
@@ -19,12 +19,12 @@ export default class Auth {
         });
     }
 
-    async register(data) {
+    register(data) {
         const url = 'register';
 
-        return await new Promise(async (resolve, reject) => {
+        return new Promise(async (resolve, reject) => {
             try {
-                const response = await this.SERVICE.post(url, data);
+                const response = await this.$http.post(url, data);
 
                 return resolve(response.data);
             } catch (error) {
@@ -33,12 +33,12 @@ export default class Auth {
         });
     }
 
-    async me() {
+    me() {
         const url = 'profile';
 
-        return await new Promise(async (resolve, reject) => {
+        return new Promise(async (resolve, reject) => {
             try {
-                const response = await this.SERVICE.get(url);
+                const response = await this.$http.get(url);
 
                 return resolve(response.data);
             } catch (error) {

@@ -26,22 +26,27 @@
 
       <v-expansion-panels accordion flat>
         <v-expansion-panel
-          v-for="(link,i) in links"
+          v-for="(filter,i) in filters"
           :key="i"
         >
           <v-expansion-panel-header>
-            {{ link.title }}
+            {{ filter.currentName }}
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-list dense>
-              <v-list-item-group color="primary">
-                <v-list-item v-for="(sub, k) in link.children" :key="k"
-                :to="link.url" router exact>
-                  <v-list-item-content>
-                    <v-list-item-title v-text="sub.title"></v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
+              <v-list-item
+                v-for="(link, i) in filter.list"
+                :key="i"
+                link
+                href="javascript:;"
+                exact
+                :disabled="link.isCurrent || isLoading"
+                @click="filterCharts(filter.key, link.value)"
+              >
+                <v-list-item-content>
+                  <v-list-item-title tag="span" v-text="link.label"></v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
             </v-list>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -50,7 +55,7 @@
   </template>
   
   <script>
-  import { mapGetters } from 'vuex';
+  import { mapGetters, mapState } from 'vuex';
   
   export default {
     name: 'AppMenu',
@@ -126,6 +131,7 @@
       }
     },
     computed: {
+      ...mapState(['isLoading', 'filters']),
       ...mapGetters({
         isSidebar: 'ui/isSidebar'
       }),
@@ -134,8 +140,30 @@
       }
     },
     methods: {
-      hasRoute(url) {
-        return this.$route.path.includes(url) && !this.$route.path.includes(`${url}-`);
+      filterCharts(key, value) {
+        const args = this.formateQuery(key, value);
+        this.$store.dispatch('fetchDashboardData', args);
+      },
+      formateQuery(key, value) {
+        if (this.filters?.length) {
+          const query = {};
+          
+          this.filters.forEach(filter => {
+            if(filter.key === key) {
+              query[filter.key] = value;
+            } else {
+              filter.list.forEach(item => {
+                if(item.isCurrent) {
+                  query[filter.key] = item.value;
+                }
+              });
+            }
+          });
+
+          return query;
+        }
+
+        return {};
       }
     },
     mounted() {

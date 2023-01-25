@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://wddysa.com/$1 [R,L]
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^index.php(.*)  https://yamamahc.sa/train-vue:49000/$1 [P,L]
+RewriteRule (.*) https://yamamahc.sa/train-vue/$1 [P,L]

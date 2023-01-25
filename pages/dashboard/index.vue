@@ -1,98 +1,117 @@
 <template>
   <div>
     <v-card color="transparent" class="mb-6" elevation="0">
-      <v-row>
-        <v-col cols="12" sm="6" md="4">
-          <statistics-card title="متقدم" content="64٬624"
-          :pieData="nationalitesData"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4">
-          <statistics-card title="مقابلة شخصية" content="11٬225" 
-          :pieData="interviewsData"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4">
-          <statistics-card title="مرشح للعقود" content="7٬156" 
-          :pieData="contractData"/>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التشغيل التجريبي"
-          :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التدريب النظري"
-          :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التدريب العملي"
-          :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التدريب العملي"
-          :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12" sm="6">
-          <v-card elevation="0" class="pa-4">
-            <h3 class="text-h6 font-weight-bold mb-4">
-              هدف التوظيف والمتحقق منه
+      <v-row v-if="isLoading">
+        <v-col v-for="loader in 3" :key="loader+'1'" cols="12" sm="6" md="4">
+          <v-card elevation="0" class="pt-6 pt-sm-8 pb-0">
+            <h3 class="mb-3 d-flex justify-center">
+              <v-skeleton-loader
+                type="heading" tile :width="400" :height="15"
+              ></v-skeleton-loader>
             </h3>
-            <bar-chart :data="[{
-              name: 'Year 1990',
-              data: [631, 727, 814, 841, 320, 540]
-            }, {
-              name: 'Year 2000',
-              data: [814, 841, 631, 727, 600, 540]
-            }]"/>
+            <h3 class="mb-6 d-flex justify-center">
+              <v-skeleton-loader
+                type="heading" tile :width="400" :height="15"
+              ></v-skeleton-loader>
+            </h3>
+            <v-divider></v-divider>
+            <div class="pa-4">
+              <v-skeleton-loader
+                type="image" tile
+              ></v-skeleton-loader>
+            </div>
+            
+            <!-- <div class="d-flex flex-column flex-md-row align-center justify-space-between gap py-2">
+              <div class="ps-6">
+                <h3 class="mb-3 d-flex justify-center">
+                  <v-skeleton-loader
+                    type="heading" tile :width="350" :height="15"
+                  ></v-skeleton-loader>
+                </h3>
+                <h3 class="mb-6 d-flex justify-center">
+                  <v-skeleton-loader
+                    type="heading" tile :width="350" :height="15"
+                  ></v-skeleton-loader>
+                </h3>
+              </div>
+              <div class="pe-2">
+                <v-skeleton-loader
+                type="chip" tile 
+              ></v-skeleton-loader>
+              </div>
+            </div> -->
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6">
-          <v-card elevation="0" class="pa-4">
-            <h3 class="text-h6 font-weight-bold mb-4">
-              لمحة حول تحضير العمل
+        <v-col v-for="loader in 2" :key="loader+'2'" cols="12" sm="6">
+          <v-card elevation="0" class="pt-6 pt-sm-8 pb-0">
+            <h3 class="mb-6 px-6">
+              <v-skeleton-loader
+                type="heading" tile :width="400" :height="15"
+              ></v-skeleton-loader>
             </h3>
-            <bar-race-chart :data="[
-              ['هدف 1',  92],
-              ['هدف 2',  30],
-              ['هدف 32',  20],
-              ['هدف ب2',  30],
-              ['هدف س2',  100],
-              ['هدف شس2',  40],
-              ['هدف ث2',  10],
-            ]"/>
+            <v-divider></v-divider>
+            <div class="pa-4">
+              <v-skeleton-loader
+                type="image" tile
+              ></v-skeleton-loader>
+            </div>
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التشغيل التجريبي"
+      <v-row v-else>
+        <v-col v-for="(widget, i) in widgets" :key="i" cols="12" sm="6" :md="widget.size"> 
+          <!-- <h3 class="px-4 pt-4 font-weight-bold text-center">{{ widget.name }}</h3> -->
+          <statistics-card v-if="widget.type.includes('overview')" 
+          :title="widget.options.countAllName" 
+          :content="widget.options.countAll"
+          :pieData="widget.data"/>
+          <pie v-else-if="widget.type === 'pie'" 
+          :title="widget.name" 
+          :data="widget.data" :width="400" :height="400"/>
+
+          <line-chart v-else-if="widget.type === 'lineChart'" :title="widget.name"
           :height="200" :data="data" :x-data="xDataFilters"/>
+          <!-- widget.type === 'horizontalBarGroup' ||  -->
+          <v-card v-else-if="widget.type === 'horizontalBarGroup'" elevation="0" class="pa-4">
+            <h3 class="text-h6 font-weight-bold mb-4">
+              {{ widget.name }}
+            </h3>
+            <horizontal-bar-group :data="widget.data"/>
+          </v-card>
+
+          <v-card v-else-if="widget.type === 'horizontalBar' && widget.data" elevation="0" class="pa-4">
+            <h3 class="text-h6 font-weight-bold mb-4">
+              {{ widget.name }}
+            </h3>
+            <horizontal-bar :data="widget.data"/>
+          </v-card>
+
+          <v-card v-else-if="widget.type === 'verticalBar'" elevation="0" class="pa-4">
+            <h3 class="text-h6 font-weight-bold mb-4">
+              {{ widget.name }}
+            </h3>
+            <vertical-bar :data="widget.data"/>
+          </v-card>
         </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التدريب النظري"
-          :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3">
+        
+        <!-- <v-col cols="12" sm="6" md="4" lg="3">
           <line-chart title="التدريب العملي"
           :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
-        <v-col cols="12" sm="6" md="4" lg="3">
-          <line-chart title="التدريب العملي"
-          :height="200" :data="data" :x-data="xDataFilters"/>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-card>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'GeneralFilterPage',
   layout: 'dashboard',
   data() {
     return {
+      loading: true,
       chartsFilter: 'day',
       data: [5.2, 5.7, 8.7, 13.9, 18.2, 21.4, 25.0, 26.4, 22.8, 17.5, 12.1, 7.6],
       areaData: [1, 200, 400, 280, 360, 150, 120, 180, 160, 150, 300, 225, 500, 400, 380, 500, 250, 450, 400, 500, 325, 300, 500, 500],
@@ -112,6 +131,7 @@ export default {
     }
   },
   computed: {
+    ...mapState(['isLoading', 'widgets']),
     xDataFilters() {
       if(['day', 'week', 'month'].includes(this.chartsFilter)) {
         let filters = {
@@ -126,6 +146,8 @@ export default {
       return []
     },
   },
-  methods: {},
+  created() {
+    this.$store.dispatch('fetchDashboardData');
+  }
 }
 </script>
