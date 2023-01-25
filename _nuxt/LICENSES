@@ -1,84 +1,8 @@
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Annotations module
- *
- * (c) 2009-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highmaps JS v10.3.2 (2022-11-28)
- *
- * (c) 2009-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Arc diagram module
- *
- * (c) 2021 Piotr Madej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Module for adding patterns and images as point fills.
- *
- * (c) 2010-2021 Highsoft AS
- * Author: Torstein Hønsi, Øystein Moseng
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * X-range series
- *
- * (c) 2010-2021 Torstein Honsi, Lars A. V. Cabrera
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts Gantt JS v10.3.2 (2022-11-28)
- *
- * StaticScale
- *
- * (c) 2016-2021 Torstein Honsi, Lars A. V. Cabrera
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * Highcharts funnel module
  *
- * (c) 2010-2021 Kacper Madej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Dependency wheel module
- *
  * (c) 2010-2021 Torstein Honsi
  *
  * License: www.highcharts.com/license
@@ -86,281 +10,7 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Highcharts Drilldown module
- *
- * Author: Torstein Honsi
- * License: www.highcharts.com/license
- *
- */
-
-
-/**
- * @license Highstock JS v10.3.2 (2022-11-28)
- *
- * Drag-panes module
- *
- * (c) 2010-2021 Highsoft AS
- * Author: Kacper Madej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts Gantt JS v10.3.2 (2022-11-28)
- *
- * CurrentDateIndicator
- *
- * (c) 2010-2021 Lars A. V. Cabrera
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Solid angular gauge module
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Dot plot series type for Highcharts
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Plugin for displaying a message when there is no data visible in chart.
- *
- * (c) 2010-2021 Highsoft AS
- * Author: Oystein Moseng
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Sankey diagram module
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * (c) 2010-2021 Highsoft AS
- * Author: Sebastian Domas
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * (c) 2016-2021 Highsoft AS
- * Authors: Jon Arild Nygard
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Timeline series
- *
- * (c) 2010-2021 Highsoft AS
- * Author: Daniel Studencki
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts Gantt JS v10.3.2 (2022-11-28)
- *
- * Gantt series
- *
- * (c) 2016-2021 Lars A. V. Cabrera
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Accessibility module
- *
- * (c) 2010-2021 Highsoft AS
- * Author: Oystein Moseng
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Force directed graph module
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Client side exporting module
- *
- * (c) 2015-2021 Torstein Honsi / Oystein Moseng
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Streamgraph module
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Data module
- *
- * (c) 2012-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Item series type for Highcharts
- *
- * (c) 2019 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highstock JS v10.3.2 (2022-11-28)
- *
- * Highcharts Stock as a plugin for Highcharts
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Exporting module
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highstock JS v10.3.2 (2022-11-28)
- *
- * HeikinAshi series type for Highcharts Stock
- *
- * (c) 2010-2021 Karol Kolodziej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * (c) 2009-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Variable Pie module for Highcharts
- *
- * (c) 2010-2021 Grzegorz Blachliński
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * (c) 2014-2021 Highsoft AS
- * Authors: Jon Arild Nygard / Oystein Moseng
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highstock JS v10.3.2 (2022-11-28)
- *
- * Hollow Candlestick series type for Highcharts Stock
- *
- * (c) 2010-2021 Karol Kolodziej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highmaps JS v10.3.2 (2022-11-28)
- *
- * Highmaps as a plugin for Highcharts or Highcharts Stock.
- *
- * (c) 2011-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highstock JS v10.3.2 (2022-11-28)
+ * @license Highstock JS v10.3.3 (2023-01-20)
  *
  * Advanced Highcharts Stock tools
  *
@@ -372,7 +22,145 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Bullet graph series type for Highcharts
+ *
+ * (c) 2010-2021 Kacper Madej
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Vector plot series module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts Gantt JS v10.3.3 (2023-01-20)
+ *
+ * GridAxis
+ *
+ * (c) 2016-2021 Lars A. V. Cabrera
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Exporting module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts Gantt JS v10.3.3 (2023-01-20)
+ *
+ * Tree Grid
+ *
+ * (c) 2016-2021 Jon Arild Nygard
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * (c) 2009-2021 Sebastian Bochan, Rafal Sebestjanski
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * X-range series
+ *
+ * (c) 2010-2021 Torstein Honsi, Lars A. V. Cabrera
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * (c) 2016-2021 Highsoft AS
+ * Authors: Jon Arild Nygard
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts Gantt JS v10.3.3 (2023-01-20)
+ *
+ * Gantt series
+ *
+ * (c) 2016-2021 Lars A. V. Cabrera
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ * Organization chart series type
+ *
+ * (c) 2019-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Highcharts 3D funnel module
+ *
+ * (c) 2010-2021 Kacper Madej
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Old IE (v6, v7, v8) module for Highcharts v6+.
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * Arrow Symbols
  *
@@ -383,52 +171,18 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highstock JS v10.3.3 (2023-01-20)
  *
- * Highcharts funnel module
+ * HeikinAshi series type for Highcharts Stock
  *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Sonification module
- *
- * (c) 2012-2021 Øystein Moseng
+ * (c) 2010-2021 Karol Kolodziej
  *
  * License: www.highcharts.com/license
  */
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Series on point module
- *
- * (c) 2010-2022 Highsoft AS
- * Author: Rafal Sebestjanski and Piotr Madej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Support for parallel coordinates in Highcharts
- *
- * (c) 2010-2021 Pawel Fus
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * Boost module
  *
@@ -441,82 +195,51 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts Gantt JS v10.3.3 (2023-01-20)
  *
- * Highcharts variwide module
+ * CurrentDateIndicator
  *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts Gantt JS v10.3.2 (2022-11-28)
- *
- * GridAxis
- *
- * (c) 2016-2021 Lars A. V. Cabrera
+ * (c) 2010-2021 Lars A. V. Cabrera
  *
  * License: www.highcharts.com/license
  */
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * Highcharts 3D funnel module
+ * Arc diagram module
  *
- * (c) 2010-2021 Kacper Madej
+ * (c) 2021 Piotr Madej
  *
  * License: www.highcharts.com/license
  */
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * Old IE (v6, v7, v8) array polyfills for Highcharts v7+.
+ * Annotations module
  *
- * (c) 2010-2021 Highsoft AS
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Highcharts Drilldown module
+ *
  * Author: Torstein Honsi
- *
  * License: www.highcharts.com/license
+ *
  */
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * (c) 2009-2021 Sebastian Bochan, Rafal Sebestjanski
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- * Organization chart series type
- *
- * (c) 2019-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Debugger module
- *
- * (c) 2012-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * Pareto series type for Highcharts
  *
@@ -527,22 +250,23 @@
 
 
 /**
- * @license Highmaps JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * Tilemap module
+ * Series on point module
  *
- * (c) 2010-2021 Highsoft AS
+ * (c) 2010-2022 Highsoft AS
+ * Author: Rafal Sebestjanski and Piotr Madej
  *
  * License: www.highcharts.com/license
  */
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * Bullet graph series type for Highcharts
+ * Solid angular gauge module
  *
- * (c) 2010-2021 Kacper Madej
+ * (c) 2010-2021 Torstein Honsi
  *
  * License: www.highcharts.com/license
  */
@@ -562,72 +286,7 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Highcharts cylinder module
- *
- * (c) 2010-2021 Kacper Madej
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highstock JS v10.3.2 (2022-11-28)
- *
- * Data grouping module
- *
- * (c) 2010-2021 Torstein Hønsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Annotations module
- *
- * (c) 2009-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- * Treegraph chart series type
- *
- *  (c) 2010-2022 Pawel Lysy Grzegorz Blachlinski
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
- *
- * Vector plot series module
- *
- * (c) 2010-2021 Torstein Honsi
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts Gantt JS v10.3.2 (2022-11-28)
- *
- * Tree Grid
- *
- * (c) 2016-2021 Jon Arild Nygard
- *
- * License: www.highcharts.com/license
- */
-
-
-/**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * Wind barb series module
  *
@@ -638,7 +297,102 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Streamgraph module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Dependency wheel module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highstock JS v10.3.3 (2023-01-20)
+ *
+ * Highcharts Stock as a plugin for Highcharts
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Data module
+ *
+ * (c) 2012-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highmaps JS v10.3.3 (2023-01-20)
+ *
+ * (c) 2009-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Support for parallel coordinates in Highcharts
+ *
+ * (c) 2010-2021 Pawel Fus
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ * Treegraph chart series type
+ *
+ *  (c) 2010-2022 Pawel Lysy Grzegorz Blachlinski
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * (c) 2014-2021 Highsoft AS
+ * Authors: Jon Arild Nygard / Oystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highstock JS v10.3.3 (2023-01-20)
+ *
+ * Data grouping module
+ *
+ * (c) 2010-2021 Torstein Hønsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * (c) 2017-2021 Highsoft AS
  * Authors: Jon Arild Nygard
@@ -648,20 +402,20 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * ColorAxis module
+ * Client side exporting module
  *
- * (c) 2012-2021 Pawel Potaczek
+ * (c) 2015-2021 Torstein Honsi / Oystein Moseng
  *
  * License: www.highcharts.com/license
  */
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * Old IE (v6, v7, v8) module for Highcharts v6+.
+ * Old IE (v6, v7, v8) array polyfills for Highcharts v7+.
  *
  * (c) 2010-2021 Highsoft AS
  * Author: Torstein Honsi
@@ -671,7 +425,52 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Debugger module
+ *
+ * (c) 2012-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highmaps JS v10.3.3 (2023-01-20)
+ *
+ * Tilemap module
+ *
+ * (c) 2010-2021 Highsoft AS
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Boost module
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Highcharts funnel module
+ *
+ * (c) 2010-2021 Kacper Madej
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
  * Marker clusters module for Highcharts
  *
@@ -682,7 +481,51 @@
 
 
 /**
- * @license Highcharts Gantt JS v10.3.2 (2022-11-28)
+ * @license Highstock JS v10.3.3 (2023-01-20)
+ *
+ * Hollow Candlestick series type for Highcharts Stock
+ *
+ * (c) 2010-2021 Karol Kolodziej
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Accessibility module
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Oystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Highcharts cylinder module
+ *
+ * (c) 2010-2021 Kacper Madej
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Sebastian Domas
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts Gantt JS v10.3.3 (2023-01-20)
  *
  * Pathfinder
  *
@@ -693,12 +536,135 @@
 
 
 /**
- * @license Highcharts JS v10.3.2 (2022-11-28)
+ * @license Highcharts JS v10.3.3 (2023-01-20)
  *
- * Boost module
+ * Sonification module
+ *
+ * (c) 2012-2021 Øystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Timeline series
  *
  * (c) 2010-2021 Highsoft AS
- * Author: Torstein Honsi
+ * Author: Daniel Studencki
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highstock JS v10.3.3 (2023-01-20)
+ *
+ * Drag-panes module
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Kacper Madej
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Highcharts variwide module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Plugin for displaying a message when there is no data visible in chart.
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Oystein Moseng
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Dot plot series type for Highcharts
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts Gantt JS v10.3.3 (2023-01-20)
+ *
+ * StaticScale
+ *
+ * (c) 2016-2021 Torstein Honsi, Lars A. V. Cabrera
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highmaps JS v10.3.3 (2023-01-20)
+ *
+ * Highmaps as a plugin for Highcharts or Highcharts Stock.
+ *
+ * (c) 2011-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Variable Pie module for Highcharts
+ *
+ * (c) 2010-2021 Grzegorz Blachliński
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Sankey diagram module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Item series type for Highcharts
+ *
+ * (c) 2019 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * ColorAxis module
+ *
+ * (c) 2012-2021 Pawel Potaczek
  *
  * License: www.highcharts.com/license
  */
@@ -714,4 +680,27 @@
  * vue-no-ssr v1.1.1
  * (c) 2018-present egoist <0x142857@gmail.com>
  * Released under the MIT License.
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Force directed graph module
+ *
+ * (c) 2010-2021 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ */
+
+
+/**
+ * @license Highcharts JS v10.3.3 (2023-01-20)
+ *
+ * Module for adding patterns and images as point fills.
+ *
+ * (c) 2010-2021 Highsoft AS
+ * Author: Torstein Hønsi, Øystein Moseng
+ *
+ * License: www.highcharts.com/license
  */
